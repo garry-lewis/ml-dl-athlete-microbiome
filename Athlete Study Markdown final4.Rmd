@@ -1,0 +1,1525 @@
+---
+title: 'The Athlete Microbiome Project: Identifying Underlying Microbial Associations
+  with Athletic Performance'
+author: "Garry Lewis, Sebastian Reczek, Jarrad Hampton-Marcell"
+date: "2024-10-23"
+output: html_document
+---
+# Prepare the data
+
+##### Import the biom data and the map data. Map data was prepped in QIIME 2. Merge the files in into a phyloseq. Any samples with a single OTU are considered outliers and are removed. Then clean up the data by renaming the variable, converting to factor, and adding numerical column that represents the samples. We then aggregate the data at the Genus level. Finally, remove the NAs from the taxa table. 
+```{r, warning=FALSE}
+
+# Libraries 
+library(phyloseq)                           # For microbiome data handling
+
+# Load Data
+setwd("/scratch/marcellab/athlete_study/tables")
+file <- import_biom("all_studies_merged_json.biom")
+
+setwd("/scratch/marcellab/athlete_study")
+map <- import_qiime_sample_data("all_studies_mapping.txt") # Metadata
+
+# Replace missing taxonomy entries with "Unclassified"
+tax_table(file) <- apply(tax_table(file), 2, function(x) ifelse(is.na(x) | x == "", "Unclassified", x))
+
+# Merge Data Together
+athlete <- merge_phyloseq(file,map)
+
+# Remove Single OTUs
+ath_no_single = prune_taxa(taxa_sums(athlete) > 1, athlete)
+
+# Rename Taxonomic Levels from Rank to Actual Name
+colnames(tax_table(ath_no_single)) <- c("Domain",
+                                        "Phylum",
+                                        "Class",
+                                        "Order",
+                                        "Family",
+                                        "Genus",
+                                        "Species")
+
+# Remove Outlier Sample
+ath_no_single <- subset_samples(ath_no_single, Target == "Yes")
+
+# Remove NAs
+ath_no_single <- subset_samples(ath_no_single, Gender != "NA")
+
+ath <- ath_no_single
+
+# Create Distance Matrix & Data Frame
+df_ath <- as(sample_data(ath), "data.frame")
+
+
+# Change Levels
+
+sample_data(ath)$Person_Type <- factor(sample_data(ath)$Person_Type,
+                                       levels = c("Athlete",
+                                                  "Gen.Pop"),
+                                       labels = c("Athlete",
+                                                  "Non-Athlete"), ordered=TRUE)
+
+df_ath$Person_Type <- factor(df_ath$Person_Type,
+                             levels = c("Athlete",
+                                        "Gen.Pop"),
+                             labels = c("Athlete",
+                                        "Non-Athlete"))
+
+#######################################################
+########## Tidy up sample ID data (subject ID's)########
+########################################################
+
+# Rename variable
+ath2 <- ath
+sample_data(ath2)$Sample <- sample_data(ath2)$SampleID
+
+# Convert samples to a factor
+sample_factor <- factor(sample_data(ath2)$Sample)
+
+# Add numerical column representing the samples
+sample_column <- as.numeric(sample_factor)
+
+sample_data(ath2)$Sample <- sample_column
+
+# Aggregating data at the genus level
+ath2 <- tax_glom(ath2, "Genus")
+
+# Clean taxonomy again AFTER aggregation
+tax_table(ath2) <- apply(tax_table(ath2), 2, function(x) ifelse(is.na(x) | x == "", "Unclassified", x))
+
+#######################################################################################################################
+##Apply a function that removes assigns NA to any missing "" in taxa table, removes [] content, and removes g__, ect. #
+########################################################################################################################
+clean_taxa <- function(name) {
+  # Remove prefixes like g__, o__, etc.
+  name <- gsub("^[a-z]__", "", name)
+  
+  # Remove bracketed content
+  name <- gsub("\\[.*\\]", "", name)
+  
+  # Remove leading and trailing white spaces
+  name <- trimws(name)
+  
+  # Replace empty strings with NA
+  if (nzchar(name)) {
+    return(name)
+  } else {
+    return(NA)
+  }
+}
+
+tax_table(ath2) <- apply(tax_table(ath2), 2, function(x) sapply(x, clean_taxa))
+
+
+```
+
+## Normilization 
+
+#### Convert the raw counts into relative abundances, sacling each sample to a sum of 1. This ensures that samples are comparabile in terms of portions. First determine the best pseudo count by taking min value that isn't zero and dividing by 2. Adding a psuedo count avoids the log of zero 0 during CLR transformation. CLR applies a log transformation to the data, making it more suitable for compostional data like relative abundances. 
+
+```{r}
+# Normalize to relative abundance
+ath2_rel_abundance <- transform_sample_counts(ath2, function(x) x / sum(x))
+
+# Extract the OTU table
+otu_data <- otu_table(ath2_rel_abundance)
+
+# Convert to matrix for manipulation
+otu_matrix <- as.matrix(otu_data)
+
+# Flatten the matrix to a single vector to avoid dimension-related subscript issues
+otu_vector <- c(otu_matrix)
+
+# Find the minimum non-zero value in the vector
+min_nonzero_value <- min(otu_vector[otu_vector > 0])
+
+# Divide the min value by 2. 
+min_nonzero_value_div <- min_nonzero_value/2
+
+pseudo_count <- min_nonzero_value_div  # Adjust based on your data
+ath2_rel_abundance_pseudo <- transform_sample_counts(ath2_rel_abundance, function(x) x + pseudo_count)
+
+# Manual CLR transformation remains the same
+clr_transformation <- function(x) {
+  log_x <- log(x)
+  geometric_mean <- exp(mean(log_x, na.rm = TRUE))
+  clr_x <- log_x - log(geometric_mean)
+  return(clr_x)
+}
+
+```
+
+
+# Measures of Physical Fitness Correlate with Microbial Composition
+
+## Comparing the measurements of each feature between Athlete and non-athlete (Age, Weight, VO2max, BC, ect)
+
+#### Convert the sample_data of the phyloseq file into a data frame. Then perform an ANOVA test to compare the means between the Athletes and Non-Athletes on their weight, height, and age to determine if there is any signifcant difference between the two groups. Finally, generate a table that measures the means and standard deviations of the two groups on the measured characteristics. 
+
+```{r}
+# Convert the sample data in the phyloseq object to a data frame
+sample_metadata_df <- data.frame(sample_data(ath2))
+
+# Check if the data frame has been created successfully
+str(sample_metadata_df)
+
+# Libraries for ANOVA and data manipulation
+library(dplyr)                # For data manipulation
+
+# Perform ANOVA tests on Weight, Height, and Age between athletes and non-athletes
+anova_weight <- aov(Weight_kg ~ Person_Type, data = sample_metadata_df)
+anova_height <- aov(Height_cm ~ Person_Type, data = sample_metadata_df)
+anova_age <- aov(Age ~ Person_Type, data = sample_metadata_df)
+
+# Extract p-values (ensure you're pulling from the correct place in the ANOVA summary)
+p_value_weight <- summary(anova_weight)[[1]][["Pr(>F)"]][1]
+p_value_height <- summary(anova_height)[[1]][["Pr(>F)"]][1]
+p_value_age <- summary(anova_age)[[1]][["Pr(>F)"]][1]
+
+# Determine significance (p < 0.05 is significant)
+significance_weight <- ifelse(p_value_weight < 0.05, "Significant", "Not Significant")
+significance_height <- ifelse(p_value_height < 0.05, "Significant", "Not Significant")
+significance_age <- ifelse(p_value_age < 0.05, "Significant", "Not Significant")
+
+# Create a summary table for ANOVA results
+anova_results_table <- data.frame(
+  Measure = c("Weight", "Height", "Age"),
+  P_Value = c(p_value_weight, p_value_height, p_value_age),
+  Significance = c(significance_weight, significance_height, significance_age)
+)
+
+# Display ANOVA results
+print(anova_results_table)
+
+```
+
+### Table 2
+
+```{r}
+# Sample characteristics table
+sample_characteristics_table <- sample_metadata_df %>%
+  group_by(Person_Type) %>%
+  summarise(
+    Weight_Mean = mean(Weight_kg, na.rm = TRUE),
+    Weight_SD = sd(Weight_kg, na.rm = TRUE),
+    Height_Mean = mean(Height_cm, na.rm = TRUE),
+    Height_SD = sd(Height_cm, na.rm = TRUE),
+    Age_Mean = mean(Age, na.rm = TRUE),
+    Age_SD = sd(Age, na.rm = TRUE),
+    BMI_Mean = mean(BMI, na.rm = TRUE),
+    BMI_SD = sd(BMI, na.rm = TRUE),
+    RMR_Mean = mean(RMR, na.rm = TRUE),         
+    RMR_SD = sd(RMR, na.rm = TRUE),             
+    VO2max_Mean = mean(VO2max, na.rm = TRUE),   
+    VO2max_SD = sd(VO2max, na.rm = TRUE)        
+  )
+
+# Display sample characteristics
+print(sample_characteristics_table)
+
+# Format and display the table using knitr 
+library(knitr)  #for integrating R code in Markdown documents
+
+kable(sample_characteristics_table, caption = "SAMPLE CHARACTERISTICS")
+
+```
+
+### Determine the overall counts of the filtered data. 
+
+```{r}
+# Number of samples (n)
+n_samples <- nsamples(ath2)
+
+# Total number of sequences (sum of all OTU counts across all samples)
+total_sequences <- sum(sample_sums(ath2))
+
+# Number of OTUs (number of unique taxa/OTUs)
+n_otus <- ntaxa(ath2)
+
+# Display the results
+cat("Number of samples (n):", n_samples, "\n")
+cat("Total number of sequences:", total_sequences, "\n")
+cat("Number of OTUs:", n_otus, "\n")
+```
+
+## RF for GM predicting Fat free mass (body comp) - Figure 1A-B
+
+#### Prepare the phyloseq for analysis using a Regression Random Forest by first removing all NAs. To calculate the Mean Squared error (MSE), the range was calculated. The training set was prepared, predictor variable was the OTUs from the Gut microbiome and the response variable was the Fat Free Percent (body composition). Using the MSE the importance scores were extracted from the model. The top ten taxa are filtered out and observed against Fat Free Percent using spearman rank correlations. 
+
+```{r}
+
+# Libraries 
+library(phyloseq)      # For microbiome data handling
+library(randomForest)  # For random forest modeling
+library(ggplot2)       # For plotting
+library(dplyr)         # For data manipulation
+library(ggpubr)        # For adding statistical annotations to ggplots
+
+#Remove all NAs
+# Assuming 'ath2' is your phyloseq object and you want to remove samples where Fat_Free_Percent is not between 0 and 100
+ath2_BC <- subset_samples(ath2, !is.na(Fat_Free_Percent) & Fat_Free_Percent >= 0 & Fat_Free_Percent <= 100)
+
+# Replace NA values with "Unclassified" in the taxonomic table
+tax_table(ath2_BC) <- apply(tax_table(ath2_BC), 2, function(x) ifelse(is.na(x) | x == "", "Unclassified", x))
+
+# Remove unclassified taxa before running RF
+ath2_BC <- subset_taxa(ath2_BC, Genus != "Unclassified")
+
+# Check the first few rows of the sample data to ensure NA values in VO2max are removed
+head(sample_data(ath2_BC))
+
+##Use this to determine if the MSR is a good fit of for the data. 
+# Calculate the minimum and maximum values of the Fat_Free_Percent variable
+min_value <- min(sample_data(ath2_BC)$Fat_Free_Percent, na.rm = TRUE)
+max_value <- max(sample_data(ath2_BC)$Fat_Free_Percent, na.rm = TRUE)
+
+# Calculate the range by subtracting the minimum from the maximum
+range_value <- max_value - min_value
+
+# Print the results
+cat("Minimum Fat-Free Percent:", min_value, "\n")
+cat("Maximum Fat-Free Percent:", max_value, "\n")
+cat("Range of Fat-Free Percent:", range_value, "\n")
+
+
+# Make Training Dataset
+predict3 <- t(otu_table(ath2_BC))
+
+
+# Create response variable (AGE_CAT)
+res3 <- sample_data(ath2_BC)$Fat_Free_Percent
+
+# Combine them into 1 data frame
+machine.data3 <- data.frame(res3, predict3)
+dim(machine.data3) 
+
+# Check total number of samples (n)
+total_ffm_samples <- nrow(sample_data(ath2_BC))  # assuming ath2_BC is your body comp dataset
+
+# Check the number of athletes and non-athletes
+athlete_count_ffm <- sum(sample_data(ath2_BC)$Person_Type == "Athlete")
+non_athlete_count_ffm <- sum(sample_data(ath2_BC)$Person_Type == "Non-Athlete")
+
+cat("Total samples (Body Comp model):", total_ffm_samples, "\n")
+cat("Athletes (Body Comp model):", athlete_count_ffm, "\n")
+cat("Non-Athletes (Body Comp model):", non_athlete_count_ffm, "\n")
+
+set.seed(8)
+
+class.BC <- randomForest(res3 ~ ., data=machine.data3, ntree = 1000, importance = TRUE)
+print(class.BC)
+
+# Extract importance scores
+imp_BC <- randomForest::importance(class.BC)
+imp_BC_df <- data.frame(OTUID = rownames(imp_BC), imp_BC)
+
+# Remove 'X' prefix from 'OTUID'
+imp_BC_df$OTUID <- gsub("X", "", imp_BC_df$OTUID)
+
+otu_df_BC <- as.data.frame(tax_table(ath2_BC))
+otu_df_BC$OTUID <- rownames(otu_df_BC)
+
+# Assuming imp_BC_df contains importance scores and otu_df_BC contains taxonomic information
+imp_BC_merged <- merge(imp_BC_df, otu_df_BC, by = "OTUID")
+
+# Now, sort this aggregated data to identify the top taxa
+imp_BC_merged <- arrange(imp_BC_merged, desc(X.IncMSE))
+
+imp_BC_top10 <- head(imp_BC_merged, 10)
+
+# Figure 1A - Generate a Mean Standard Error
+Fig1A <- ggplot(imp_BC_top10, aes(x = reorder(Genus, X.IncMSE, decreasing = TRUE), y = X.IncMSE, fill = Order)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  theme_classic() +
+  labs(x = expression(italic("Genus")),
+       y = "Increase in MSE",
+       fill = "Order") +
+  theme(axis.text.y = element_text(face = "italic"))
+
+Fig1A
+
+# Filter ath.genera3 to include only the top 10 taxa identified in imp_BC_top10
+top_genera3 <- unique(imp_BC_top10$Genus) # Assuming the top 10 are already selected
+
+# Create a taxa dataframe
+ath_genera_BC <- ath2_BC %>%
+  #tax_glom(taxrank = "Genus") %>%  # Aggregate at Genus level
+  psmelt() %>%                     # Melt to long format
+  arrange(Order)                   # Optional: Order by taxonomic Orde
+
+ath.genera3_filtered <- ath_genera_BC %>%
+  filter(Genus %in% top_genera3)
+
+# Make genera italic
+ath.genera3_filtered <- ath_genera_BC %>%
+  filter(Genus %in% top_genera3) %>%
+  mutate(Genus = factor(Genus, levels = unique(Genus), labels = paste0("italic('", unique(Genus), "')")))
+
+# Plot spearmans
+Fig1B <- ggplot(ath.genera3_filtered, aes(x = Fat_Free_Percent, y = Abundance)) +
+  geom_point(color = "black", alpha = 0.1, size = 0.25) +
+  scale_y_log10() +
+  geom_smooth(method = "lm", se = TRUE, color = "blue", fill = "lightblue") +  # Add LM line of best fit
+  stat_cor(method = "spearman", size = 3) +  # Reduce font size for R and p values
+  facet_wrap(~Genus, scales = "free_y", labeller = label_parsed) +
+  labs(y = "log10 Microbial Abundance", x = "Fat Free Percent") +
+  theme_bw()
+
+Fig1B
+
+```
+
+## RF for GM predicting VO2max - Figure 1C-D
+
+#### Prepare the phyloseq for analysis using a Regression Random Forest by first removing all NAs. To calculate the Mean Squared error (MSE), the range was calculated. The training set was prepared, predictor variable was the OTUs from the Gut microbiome and the response variable was the VO2max. Using the MSE the importance scores were extracted from the model. The top ten taxa are filtered out and observed against VO2max scores using spearman rank correlations. 
+
+```{r}
+# Libraries 
+library(phyloseq)      # For microbiome data handling
+library(randomForest)  # For random forest modeling
+library(ggplot2)       # For plotting
+library(dplyr)         # For data manipulation
+library(ggpubr)        # For adding statistical annotations to ggplots
+
+
+#Remove all NAs
+ath2_VO2max <- subset_samples(ath2, !is.na(VO2max))
+
+# Remove unclassified taxa before running RF
+ath2_VO2max <- subset_taxa(ath2_VO2max, Genus != "Unclassified")
+
+# Check the first few rows of the sample data to ensure NA values in VO2max are removed
+head(sample_data(ath2_VO2max))
+
+# Make Training Dataset
+predict2 <- t(otu_table(ath2_VO2max))
+dim(predict2)
+
+# Create response variable (AGE_CAT)
+res2 <- sample_data(ath2_VO2max)$VO2max
+
+# Combine them into 1 data frame
+machine.data2 <- data.frame(res2, predict2)
+dim(machine.data2) 
+
+# Check total number of samples (n)
+total_vo2_samples <- nrow(sample_data(ath2_VO2max))  
+
+# Check the number of athletes and non-athletes
+athlete_count_vo2 <- sum(sample_data(ath2_VO2max)$Person_Type == "Athlete")
+non_athlete_count_vo2 <- sum(sample_data(ath2_VO2max)$Person_Type == "Non-Athlete")
+
+cat("Total samples (VO2max model):", total_vo2_samples, "\n")
+cat("Athletes (VO2max model):", athlete_count_vo2, "\n")
+cat("Non-Athletes (VO2max model):", non_athlete_count_vo2, "\n")
+
+##Use this to determine if the MSR is a good fit of for the data. 
+# Calculate the minimum and maximum values of the Fat_Free_Percent variable
+min_value_V <- min(sample_data(ath2_VO2max)$VO2max, na.rm = TRUE)
+max_value_V <- max(sample_data(ath2_VO2max)$VO2max, na.rm = TRUE)
+
+# Calculate the range by subtracting the minimum from the maximum
+range_value_V <- max_value_V - min_value_V
+
+# Print the results
+cat("Minimum VO2max:", min_value_V, "\n")
+cat("Maximum VO2maxt:", max_value_V, "\n")
+cat("Range of VO2max:", range_value_V, "\n")
+
+set.seed(8)
+
+class.VO2max <- randomForest(res2 ~ ., data=machine.data2, ntree = 1000, importance = TRUE)
+print(class.VO2max)
+
+# Extract importance scores
+imp_VO2max <- randomForest::importance(class.VO2max)
+imp_VO2max_df <- data.frame(OTUID = rownames(imp_VO2max), imp_VO2max)
+
+# Remove 'X' prefix from 'OTUID'
+imp_VO2max_df$OTUID <- gsub("X", "", imp_VO2max_df$OTUID)
+
+# Prepare the OTU dataframe with taxonomic information
+otu_df2 <- as.data.frame(tax_table(ath2_VO2max))
+otu_df2$OTUID <- rownames(otu_df2)
+
+# Merge importance scores with taxonomic information
+imp_VO2max_merged <- merge(imp_VO2max_df, otu_df2, by = "OTUID")
+
+
+# Now, sort this aggregated data to identify the top taxa
+imp_VO2max_merged <- arrange(imp_VO2max_merged, desc(X.IncMSE))
+
+imp_VO2max_top10 <- head(imp_VO2max_merged, 10)
+
+# Replace NA values in the Genus column with "Unclassified" for the MSE figure data
+imp_VO2max_top10$Genus[is.na(imp_VO2max_top10$Genus)] <- "Unclassified"
+
+# ggplot to use aggregated data for Increase MSE
+Fig1C <- ggplot(imp_VO2max_top10, aes(x = reorder(Genus, X.IncMSE, decreasing = TRUE), y = X.IncMSE, fill = Order)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  theme_classic() +
+  labs(x = "Genus",
+       y = "Increase in MSE",
+       fill = "Order")+
+  theme(axis.text.y = element_text(face = "italic"))
+ 
+Fig1C
+
+# Filter ath.genera2 to include only the top 10 taxa identified in imp_VO2max_aggregated_with_NA
+top_genera2 <- unique(imp_VO2max_top10$Genus) # Assuming the top 10 are already selected
+
+# Create a taxa dataframe
+ath_genera_VO2max <- ath2_VO2max %>%
+  #tax_glom(taxrank = "Genus") %>%  # Aggregate at Genus level
+  psmelt() %>%                     # Melt to long format
+  arrange(Order)                   # Optional: Order by taxonomic Order
+
+# Create a filtered version of ath.genera that reflects what you aggregated.
+ath.genera2_filtered <- ath_genera_VO2max %>%
+  filter(Genus %in% top_genera2)
+
+# Add a small constant to the abundance values to avoid issues with log10(0)
+ath.genera2_filtered$Abundance <- ath.genera2_filtered$Abundance + 1
+
+# Modify Genus column to be parsed for italics
+ath.genera2_filtered <- ath_genera_VO2max %>%
+  filter(Genus %in% top_genera2) %>%
+  mutate(Genus = factor(Genus, levels = unique(Genus), 
+                        labels = paste0("italic('", unique(Genus), "')")))
+
+# Add a small constant to the abundance values to avoid log10(0) issues
+ath.genera2_filtered$Abundance <- ath.genera2_filtered$Abundance + 1
+
+# Spearman correlation of VO2max and abundance of each Taxa
+Fig1D <- ggplot(ath.genera2_filtered, aes(x = VO2max, y = Abundance)) +
+  geom_point(color = "black", alpha = 0.1, size = 0.25) +
+  scale_y_log10() +
+  geom_smooth(method = "lm", se = TRUE, color = "blue", fill = "lightblue") +  # Add LM line of best fit
+  stat_cor(method = "spearman", size = 3) +  # Reduce font size for R and p values
+  facet_wrap(~Genus, scales = "free_y", labeller = label_parsed) +  # Ensure italics render correctly
+  labs(y = "log10 Microbial Abundance", x = "VO2max (ml/kg/min)") +
+  theme_bw()
+
+Fig1D
+
+
+```
+
+# Combine figures 1A-D and format to dpi = 300
+
+```{r}
+# Load necessary libraries
+library(ggpubr)
+library(cowplot)
+
+# Extract legends from Fig1A and Fig1C (keep Order classification)
+legend_A <- get_legend(Fig1A)
+legend_C <- get_legend(Fig1C)
+
+# Remove legends from individual plots to avoid duplication
+Fig1A_clean <- Fig1A + theme(legend.position = "none")
+Fig1B_clean <- Fig1B + theme(legend.position = "none")
+Fig1C_clean <- Fig1C + theme(legend.position = "none")
+Fig1D_clean <- Fig1D + theme(legend.position = "none")
+
+# Arrange A with its legend and C with its legend
+Fig1A_with_legend <- ggarrange(Fig1A_clean, legend_A, 
+                               ncol = 2, widths = c(3, 0.7))  # Keep legend close
+
+Fig1C_with_legend <- ggarrange(Fig1C_clean, legend_C, 
+                               ncol = 2, widths = c(3, 0.7))  # Keep legend close
+
+# Merge all plots into a 2x2 layout
+Fig1_combined <- ggarrange(
+  ggarrange(Fig1A_with_legend, Fig1B_clean, labels = c("A", "B"), ncol = 2, widths = c(1.2, 2)),
+  ggarrange(Fig1C_with_legend, Fig1D_clean, labels = c("C", "D"), ncol = 2, widths = c(1.2, 2)),
+  nrow = 2
+) 
+
+# Remove gray background completely
+Fig1_final <- ggdraw() + 
+  draw_plot(Fig1_combined, x = 0, y = 0, width = 1, height = 1)
+
+# Save as high-quality PNG with white background
+ggsave("Figure1.png", Fig1_final, width = 12, height = 10, dpi = 300, bg = "white")
+```
+# Athletes harbor distinct gut microbiota when compared to non-athletes
+
+## Determine alpha diversity between Athletes and non-athletes 
+
+### Bar plot - Supplimental figure 1
+
+#### Alpha diversity (Shannon, Simpson, Observed richness) was calculated using phyloseq::estimate_richness. Person_Type metadata (Athlete vs. Non-Athlete) was added, and group means were summarized. Diversity indices were visualized with ggplot2 as bar plots with error bars (mean ± SD). Kruskal-Wallis test assessed significance of differences in Shannon diversity between groups. This approach highlights differences in microbial richness and evenness by group.
+```{r}
+
+# Libraries 
+library(phyloseq)  # For alpha diversity estimation
+library(tidyverse) # For data manipulation and visualization (dplyr, ggplot2)
+library(ggpubr)    # For stat_compare_means()
+library(stats)     # For kruskal.test() and aggregate()
+
+#############################################
+### Alpha diversity between Athlete and Non-Athlete
+############################################
+# Calculate alpha diversity
+alpha_diversity <- estimate_richness(ath2, measures = c("Shannon", "Simpson", "Observed"))
+
+# Add Person_Type information to the alpha diversity data frame
+alpha_diversity$Person_Type <- sample_data(ath2)$Person_Type
+
+# Simple comparison using aggregate
+aggregate(. ~ Person_Type, data = alpha_diversity, mean)
+
+supfig1 <- alpha_diversity %>%
+  gather(key = "DiversityIndex", value = "Value", -Person_Type) %>%
+  group_by(Person_Type, DiversityIndex) %>%
+  summarize(MeanDiversity = mean(Value), SD = sd(Value)) %>%
+  ggplot(aes(x = Person_Type, y = MeanDiversity, fill = Person_Type)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  facet_wrap(~DiversityIndex, scales = "free") +
+  geom_errorbar(aes(ymin = MeanDiversity - SD, ymax = MeanDiversity + SD), width = 0.2, position = position_dodge(0.9)) +
+  theme_minimal() +
+  stat_compare_means(comparisons = list(c("Non-Athlete","Athlete")),label = 'p.signif')+
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank())+
+  labs(title = "Alpha Diversity by Person Type", y = "Diversity (Mean ± SD)", x = "")
+
+supfig1
+
+# Kruskal-Wallis test for Shannon diversity
+kruskal.test(Shannon ~ Person_Type, data = alpha_diversity)
+
+# Supp Fig 1 DP1=300
+ggsave("SuppFigure1.png", supfig1, width = 12, height = 10, dpi = 300, bg = "white")
+
+```
+
+
+## Determining how much of region plays a role in GM compostion. 
+
+### PCoA Region Plot - Aitchison distance - Figure 2 A
+
+#### Begin my applying the CLR tranformation function from Data prep, Normilzation section (Converts raw data counts into Relative abundance). Euclidean distance was used on transofrmed data (making it an Aitchison model) to preserve the relationshps between transformed values. To visualze the model convert the PCoA to a dataframe to construct a scatterplot with ggplot. Permenova test determines the variance explained and significance of region on GM compostion. 
+
+
+```{r}
+#Libraries 
+library(phyloseq)  # For microbiome data handling
+library(vegan)     # For calculating distance and performing PERMANOVA
+library(ggplot2)   # For visualizing the PCoA
+library(viridis)   # For adding color scale to plot
+
+# Apply CLR transformation function across taxa
+otu_matrix <- otu_table(ath2_rel_abundance_pseudo)
+otu_matrix_clr <- apply(otu_matrix, 2, clr_transformation)
+
+# Calculate Euclidean distance on CLR-transformed data
+distance_matrix <- vegdist(t(otu_matrix_clr), method = "euclidean")
+
+# Perform PCoA using the distance matrix
+pcoa_results <- cmdscale(distance_matrix, eig = TRUE, k = 2)  # k is the number of dimensions
+
+# Convert PCoA results to a dataframe for ggplot
+pcoa_df <- as.data.frame(pcoa_results$points)
+pcoa_df$Region <- sample_data(ath2_rel_abundance_pseudo)$Region
+
+# Calculate percentage of variance explained by each axis
+variance_explained <- pcoa_results$eig / sum(pcoa_results$eig) * 100
+
+# Convert PCoA results to a dataframe for ggplot
+pcoa_df <- as.data.frame(pcoa_results$points)
+pcoa_df$Region <- sample_data(ath2_rel_abundance_pseudo)$Region
+
+# Modify axis labels to include variance explained
+x_label <- paste0("PCoA1 (", round(variance_explained[1], 2), "%)")
+y_label <- paste0("PCoA2 (", round(variance_explained[2], 2), "%)")
+
+# Plotting PCoA with Aitchison Distance for Region
+Fig2A <- ggplot(pcoa_df, aes(x = V1, y = V2, color = Region)) +
+  geom_point() +
+  labs(x = x_label, y = y_label) +
+  theme_minimal() +
+  stat_ellipse(type = "t", level = 0.95, linetype = 2) +
+  scale_color_viridis_d()
+
+Fig2A
+
+# Permanova to test significance based on Region
+sample_metadata <- data.frame(sample_data(ath2_rel_abundance_pseudo))
+permanova_results <- adonis2(distance_matrix ~ Region, data = sample_metadata, permutations = 999)
+print(permanova_results)
+
+```
+
+### PCoA Person_Type (Athlete v. Non) Plot - Aitchison distance - Fig2B
+
+#### Begin my applying the CLR tranformation function from Data prep, Normilzation section (Converts raw data counts into Relative abundance). Euclidean distance was used on transofrmed data (making it an Aitchison model) to preserve the relationshps between transformed values. To visualze the model convert the PCoA to a dataframe to construct a scatterplot with ggplot. Permenova test determines the variance explained and significance of region on GM compostion.
+
+```{r}
+#Libraries 
+library(phyloseq)  # For microbiome data handling
+library(vegan)     # For calculating distance and performing PERMANOVA
+library(ggplot2)   # For visualizing the PCoA
+library(viridis)   # For adding color scale to plot
+
+# Apply CLR transformation across taxa
+otu_matrix <- otu_table(ath2_rel_abundance_pseudo)
+otu_matrix_clr <- apply(otu_matrix, 2, clr_transformation)
+
+# Calculate Euclidean distance on CLR-transformed data
+distance_matrix <- vegdist(t(otu_matrix_clr), method = "euclidean")
+
+# Perform PCoA using the distance matrix
+pcoa_results <- cmdscale(distance_matrix, eig = TRUE, k = 2)  # k is the number of dimensions
+
+# Convert PCoA results to a dataframe for ggplot
+pcoa_df_Person_Type <- as.data.frame(pcoa_results$points)
+pcoa_df_Person_Type$Person_Type <- sample_data(ath2_rel_abundance_pseudo)$Person_Type
+# Calculate percentage of variance explained by each axis
+variance_explained <- pcoa_results$eig / sum(pcoa_results$eig) * 100
+
+# Convert PCoA results to a dataframe for ggplot
+pcoa_df_Person_Type <- as.data.frame(pcoa_results$points)
+pcoa_df_Person_Type$Person_Type <- sample_data(ath2_rel_abundance_pseudo)$Person_Type
+
+# Modify axis labels to include variance explained
+x_label <- paste0("PCoA1 (", round(variance_explained[1], 2), "%)")
+y_label <- paste0("PCoA2 (", round(variance_explained[2], 2), "%)")
+
+# Plotting PCoA with Aitchison Distance for Person_Type
+Fig2B <- ggplot(pcoa_df_Person_Type, aes(x = V1, y = V2, color = Person_Type)) +
+  geom_point() +
+  labs(x = x_label, y = y_label) +
+  theme_minimal() +
+  stat_ellipse(type = "t", level = 0.95, linetype = 2) +
+  scale_color_viridis_d()
+
+Fig2B
+
+# Permanova to test significance based on Person_Type
+sample_metadata <- data.frame(sample_data(ath2_rel_abundance_pseudo))
+permanova_results_Person_Type <- adonis2(distance_matrix ~ Person_Type, data = sample_metadata, permutations = 999)
+print(permanova_results_Person_Type)
+
+```
+
+### Mixed effects model - Fig2C
+
+##### We set up an analysis create a genera-level data frame from a phyloseq object (ath2), using various transformations and aggregations to calculate abundances by genus and sample, and mark unspecified genera as "Unassigned." The data is reshaped and manipulated into a format suitable for modeling, with SampleID set as row names for ease of processing. Next, create covariates (Status and Region) and incorporate them into a combined dataset with abundance data, preparing for mixed-effects modeling. Using the mms function, fitting a mixed-effects model that examines genus abundance based on sample status while accounting for region variability as a random effect. The model outputs are processed to extract and display genus-level effect estimates, which are summarized in a data frame (results_df). Finally, visualize the estimated effects across genera using ggplot2, creating a bar chart that highlights the estimated effects of each genus.
+
+```{r}
+# Removes warnning messages from markdown 
+options(warn = -1)
+
+#Libraries
+library(NBZIMM)    # For analyzing zero-inflated negative binomial mixed models
+library(ZIBR)      # For fitting zero-inlfated models to microbiome data
+library(ggplot2)   # For visualizing the Model
+library(ggpubr)    # For combing and annotating figures
+
+# Make a data from from the phyloseq
+ath.genera <- ath2 %>%
+  tax_glom(taxrank = "Genus") %>%                     # agglomerate at phylum level
+  #transform_sample_counts(function(x) {x/sum(x)} ) %>% # Transform to rel. abundance
+  psmelt() %>%                                         # Melt to long format
+  #filter(Abundance > 0.01) %>%                         # Filter out low abundance taxa
+  arrange(Order)                                      # Sort data frame alphabetically by phylum
+
+# Aggregrate Table
+ath.agg <- aggregate(Abundance ~ Genus + SampleID, ath.genera, FUN = sum)
+
+# Make Blank Cells Unspecified
+ath.agg$Genus[ath.agg$Genus == ""] <- "Unassigned"
+
+# Manipulate Data Table to Short Version
+ath.agg.otus <- as.data.frame(reshape::cast(ath.agg, SampleID ~ Genus, sum))
+
+# Make SampleID Rownames and Remove Column
+rownames(ath.agg.otus) <- ath.agg.otus$SampleID
+ath.agg.otus$SampleID <- NULL
+
+# Check Dimensions
+dim(ath.agg.otus)
+
+### Create Variables for Model ###
+# Sample Data
+Status <- ath.genera$Person_Type
+Region <- ath.genera$Region
+
+# Combine the abundance data with the covariates
+ath.agg.combined <- cbind(ath.agg.otus, Status = Status, Region = Region)
+
+# Generate Mixed Effect Model
+ath.lme.model <- mms(
+  y = ath.agg.otus,
+  fixed = ~ Status,
+  random = ~ 1 | Region,
+  data = ath.agg.combined,  # Specify the data object containing covariates
+  min.p = 0.2,
+  method = "nb"
+)
+
+# Extract model results and create a data frame of the significant taxa using NBZIMM
+ath.diff.results <- ath.lme.model$fit  # Extract the list of fits for each genus
+
+# Initialize an empty list to store results
+results_list <- list()
+
+# Iterate through each fit and extract all available coefficients
+for (genus in names(ath.diff.results)) {
+  if (!is.null(ath.diff.results[[genus]])) {
+    message("Genus: ", genus)
+    message("Available fields: ", paste(names(ath.diff.results[[genus]]), collapse = ", "))
+    # Extract coefficients if available
+    if (!is.null(ath.diff.results[[genus]]$coefficients)) {
+      coefficients <- ath.diff.results[[genus]]$coefficients
+      for (coef_name in names(coefficients)) {
+        estimate <- coefficients[[coef_name]]
+        if (is.numeric(estimate)) {
+          results_list <- append(results_list, list(data.frame(Genus = genus, Coefficient = coef_name, Estimate = as.numeric(estimate))))
+        }
+      }
+    }
+  }
+}
+
+# Combine all results into a data frame
+results_df <- do.call(rbind, results_list)
+
+# Print summary of results_df for debugging
+print(head(results_df))
+print(dim(results_df))
+
+
+# Convert Genus to a formatted expression for italics
+results_df2 <- results_df %>%
+  mutate(Genus = factor(Genus, levels = unique(Genus), 
+                        labels = paste0("italic('", unique(Genus), "')")))
+
+# Create a ggplot visualization with italicized x-axis labels
+Fig2C <- if (nrow(results_df2) > 0) {
+  ggplot(data = results_df2, aes(x = reorder(Genus, -abs(Estimate)), y = Estimate)) +
+    geom_bar(stat = "identity", fill = "skyblue", width = 0.8) +
+    scale_y_continuous(expand = c(0, 0), limits = c(0, max(results_df$Estimate) * 1.1)) +
+    labs(x = "Genus", y = "Log-fold change in genus abundance") +
+    theme(axis.text.x = element_text(angle = 60, hjust = 1, vjust = 1, size = 8),
+          plot.margin = unit(c(10, 20, 10, 20), "pt")) +
+    scale_x_discrete(labels = scales::parse_format())  # Ensure italics are rendered
+} else {
+  message("No valid data available for plotting.")
+}
+
+Fig2C
+
+```
+
+### Merge Fig 2A-C into png with 300 DPI
+
+```{r}
+# Clean up Fig2C for merge
+Fig2C_clean <- Fig2C + 
+  theme_classic() +  # Removes gray background
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1, size = 8))  # Rotate x-axis text
+
+
+# Arrange A and B in a single row with equal widths
+Fig2_top <- ggarrange(Fig2A, Fig2B, labels = c("A", "B"), 
+                      ncol = 2, widths = c(1, 1))  # Ensures same size
+
+# Place C below, spanning full width
+Fig2 <- ggarrange(Fig2_top, Fig2C_clean, labels = c("", "C"),
+                  ncol = 1, nrow = 2, heights = c(1, 1.3))  # Stretch C
+
+ggsave("Figure2.png", Fig2, width = 12, height = 10, dpi = 300, bg = "white")
+
+```
+### Catagorical OOB RF for Person_Type (Athlete v. Non) from top 20 identifed in mixed effect model - Fig3A-B
+
+#### The top 20 genera were selected based on the absolute estimated effect size from results_df and filtered from the phyloseq object (ath2). A Random Forest model was trained using the filtered dataset to classify samples as either Athlete or Non-Athlete, with OTU abundance as predictors. Feature importance scores (Mean Decrease Accuracy) were extracted and visualized to determine the key genera driving classification. A Wilcoxon rank-sum test was performed to compare microbial abundance between Athlete and Non-Athlete groups for each genus, identifying those with statistically significant differences (p < 0.05). Finally, a box plot was generated to visualize the abundance of the significant genera between the groups, with log-transformed y-axis and annotated p-values indicating significance.
+
+```{r}
+# Libraries 
+library(phyloseq)      # For microbiome data handling
+library(randomForest)  # For random forest modeling
+library(ggplot2)       # For plotting
+library(dplyr)         # For data manipulation
+library(ggpubr)        # For adding statistical annotations to ggplots
+
+# Select top 20 genera based on the absolute estimated effect size
+top_20_genera <- results_df %>%
+  arrange(desc(abs(Estimate))) %>%
+  head(20) %>%
+  pull(Genus)
+
+# Filter phyloseq object to include only top 20 genera
+# Subset the OTUs in the phyloseq object to match the top 20 genera
+ath2_top20 <- subset_taxa(ath2, Genus %in% top_20_genera)
+
+# Make Training Dataset for Random Forest using filtered phyloseq
+predict_top20 <- t(otu_table(ath2_top20))  # Create OTU abundance matrix for RF
+
+# Create response variable (Athlete vs. Non-Athlete)
+res <- sample_data(ath2_top20)$Person_Type
+
+# Combine them into one data frame for Random Forest
+machine.data_top20 <- data.frame(res, predict_top20)
+
+# Check dimensions before proceeding
+dim(machine.data_top20)
+
+# Run Random Forest Model with the Top 20 Genera
+set.seed(8)
+class.ath4_top20 <- randomForest(res ~ ., data = machine.data_top20, ntree = 1000, importance = TRUE)
+print(class.ath4_top20)
+
+# Extract importance scores for visualization or analysis
+impcl_top20 <- randomForest::importance(class.ath4_top20)
+impcl_df_top20 <- data.frame(OTUID = rownames(impcl_top20), impcl_top20)
+
+# Print top genera based on random forest analysis
+print(impcl_df_top20)
+
+# Get the top 20 genera based on MeanDecreaseAccuracy
+impcl_top20 <- impcl_df_top20 %>%
+  arrange(desc(MeanDecreaseAccuracy)) %>%
+  head(20)
+
+# Prepare the OTU dataframe with taxonomic information
+otu_df <- as.data.frame(tax_table(ath2))
+otu_df$OTUID <- rownames(otu_df)
+
+# Remove any "X" prefix from OTUIDs in impcl_top20 and otu_df to ensure consistency
+impcl_top20$OTUID <- gsub("^X", "", impcl_top20$OTUID)
+otu_df$OTUID <- gsub("^X", "", otu_df$OTUID)
+
+# Convert OTUID columns to character type to ensure compatibility
+impcl_top20$OTUID <- as.character(impcl_top20$OTUID)
+otu_df$OTUID <- as.character(otu_df$OTUID)
+
+# Merge the importance scores with taxonomic information again
+imp_merged <- merge(impcl_top20, otu_df, by = "OTUID")
+print(imp_merged)   # Check if imp_merged now contains data
+
+
+# Convert Genus to an italicized expression for plotting
+imp_merged2 <- imp_merged %>%
+  mutate(Genus = factor(Genus, levels = unique(Genus), 
+                        labels = paste0("italic('", unique(Genus), "')")))
+
+# Create ggplot visualization with italicized genus names on the x-axis
+Fig3A <- ggplot(imp_merged2, aes(x = reorder(Genus, MeanDecreaseAccuracy, decreasing = TRUE), 
+                                y = MeanDecreaseAccuracy, fill = Order)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  theme_classic() +
+  labs(x = "Genus",
+       y = "Mean Decrease Accuracy",
+       fill = "Order") +
+  scale_x_discrete(labels = scales::parse_format())  # Ensure italics are rendered correctly
+
+Fig3A
+
+# Get the top genera from `imp_merged`
+top_genera <- unique(imp_merged$Genus)  # Get the top 20 genera
+
+# Create a taxa data frame from `ath2_top20`
+ath_genera_top20 <- ath2_top20 %>%
+  psmelt() %>%  # Melt to long format
+  arrange(Order)
+
+# Filter `ath_genera_top20` to include only the top genera
+ath.genera_filtered_Top20 <- ath_genera_top20 %>%
+  filter(Genus %in% top_genera)
+
+# Perform the Wilcoxon rank-sum test for each genus between Athlete and Non-Athlete groups
+Wil_Athlete_v_Non <- ath.genera_filtered_Top20 %>%
+  group_by(Genus) %>%
+  summarise(
+    p_value = if (length(Abundance[Person_Type == "Athlete"]) > 0 && length(Abundance[Person_Type == "Non-Athlete"]) > 0) {
+      wilcox.test(Abundance[Person_Type == "Athlete"], Abundance[Person_Type == "Non-Athlete"])$p.value
+    } else {
+      NA
+    }
+  )
+
+# Check the Wilcoxon rank-sum test results
+print(Wil_Athlete_v_Non)
+
+# Filter to get only the significant genera based on Wilcoxon p-values
+significant_genera <- Wil_Athlete_v_Non %>%
+  filter(p_value < 0.05) %>%
+  pull(Genus)
+
+# Create a new filtered taxa data frame for only the significant genera
+ath.genera_filtered_Significant <- ath.genera_filtered_Top20 %>%
+  filter(Genus %in% significant_genera)
+
+# Convert Genus to an italicized expression for proper ggplot parsing
+ath.genera_filtered_Significant <- ath.genera_filtered_Significant %>%
+  mutate(Genus = factor(Genus, levels = unique(Genus), 
+                        labels = paste0("italic('", unique(Genus), "')")))
+
+# Create the box plot with Wilcoxon rank-sum test p-values for the significant genera
+Fig3B <- ath.genera_filtered_Significant %>%
+  filter(Person_Type %in% c("Athlete", "Non-Athlete")) %>%
+  ggplot(aes(x = Person_Type, y = Abundance, fill = Person_Type)) +
+  geom_boxplot() +
+  scale_y_log10() +  # Log-transform the y-axis
+  facet_wrap(~Genus, scales = "free_y", nrow = 2, labeller = label_parsed) +  # Italicized facet labels
+  stat_compare_means(method = "wilcox.test", label = "p.signif", comparisons = list(c("Non-Athlete", "Athlete"))) +  # Annotate p-values
+  labs(x = "", y = "Log10 Abundance", fill = "Person Type") +
+  theme_minimal() +
+  scale_fill_manual(values = c("Non-Athlete" = "blue", "Athlete" = "red")) +  # Set custom colors
+  theme(
+    axis.text.x = element_blank(), 
+    axis.ticks.x = element_blank(),
+    strip.text = element_text(size = 7)  # Reduce facet title (Genus) text size
+  )
+
+Fig3B
+
+# Merge figure 3 into png with 300 DPI
+
+# Extract the legend from Fig3A
+legend_3A <- get_legend(Fig3A)
+
+# Remove legend from Fig3A after extracting it
+Fig3A_clean <- Fig3A + theme(legend.position = "none")
+Fig3B_clean <- Fig3B + theme(legend.position = "none")
+
+# Arrange Fig3A with its legend, placing the legend further right
+Fig3A_with_legend <- ggarrange(Fig3A_clean, legend_3A, 
+                               ncol = 2, widths = c(3, 1))  # Increase spacing
+
+Fig3B_clean <- Fig3B_clean + theme(
+  axis.text.x = element_text(size = 6),  # Reduce font size without rotation
+  strip.text = element_text(size = 7, face = "italic"),  # Increase facet label size
+  plot.margin = margin(10, 10, 50, 10)   # Increase top margin for significance stars
+)
+
+Fig3B_clean <- Fig3B_clean + expand_limits(y = max(Fig3B_clean$data$Abundance) * 1.2)
+
+# Arrange Fig3A with its legend
+Fig3A_with_legend <- ggarrange(Fig3A_clean, legend_3A, 
+                               ncol = 2, widths = c(3, 1))  # Extra spacing for clarity
+# Format Fig3 
+Fig3 <- ggarrange(
+  Fig3A_with_legend, Fig3B_clean, # puts legend next to Fig 3A
+  labels = c("A", "B"),  
+  ncol = 2, 
+  widths = c(1, 2.5),  # Make Fig3B take even more space
+  heights = c(1, 1.7)  # Further increase Fig3B's height
+)
+
+# Save the final stretched version
+ggsave("Figure3.png", Fig3, width = 18, height = 9, dpi = 300, bg = "white")
+
+
+```
+
+## Multilayer Perceptron (neural network) - Figure 4A-C
+
+#### In this analysis, reproducibility was enforced by setting environment variables before loading TensorFlow/Keras—disabling GPU usage, limiting parallel threads, requesting deterministic operations, and fixing the base R seed—to ensure all subsequent random operations were reproducible. Required libraries (including keras3, tensorflow, ggplot2, caret, and ComplexHeatmap) were loaded and TensorFlow’s seed was set. The microbial abundance data from a phyloseq object was processed by applying a centered log-ratio (CLR) transformation, extracting and, if necessary, transposing the OTU table so that columns represented genera, replacing zeros with a small constant to avoid log issues, and normalizing each sample to relative abundances before merging with metadata. The dataset was then split by Person_Type (Athlete vs. Non-Athlete) and balanced via caret’s upsampling; the features were converted to numeric, scaled, and cleaned of missing or infinite values before partitioning into training and testing sets with labels encoded as Athlete = 0 and Non-Athlete = 1. A sequential neural network model with two dense layers (with dropout regularization) and a sigmoid output layer was defined, compiled with the Adam optimizer and binary crossentropy loss, and trained using early stopping and class weights to address imbalance. Model performance was evaluated on the test set by generating predictions, computing a confusion matrix (with classes renamed to Athlete and Non-Athlete) and an ROC curve with AUC calculation, and visualizing these metrics with ggplot2. Finally, for differential abundance analysis, test data was reshaped into long format and OTU identifiers were mapped to genus names (assigning “Unknown” where necessary), mean abundances were computed per genus for each predicted group, and fold-change (Pred_NonAthlete minus Pred_Athlete) was calculated; the top 50 genera by absolute fold-change were selected, an approximate reverse CLR transformation was applied to derive percent contributions, and a ComplexHeatmap was generated—with italicized genus labels and rotated x-axis labels—to visualize these contributions alongside a fold-change annotation.. 
+```{r}
+
+# Set environment variables BEFORE loading TensorFlow/Keras:
+Sys.setenv(
+  CUDA_VISIBLE_DEVICES = "",       # Disable GPU for stricter determinism (remove if you need GPU)
+  OMP_NUM_THREADS = "1",           # Limit OpenMP threads
+  TF_NUM_INTEROP_THREADS = "1",    # Limit inter-operation threads for TF
+  TF_NUM_INTRAOP_THREADS = "1",    # Limit intra-operation threads for TF
+  TF_DETERMINISTIC_OPS = "1",      # Request deterministic operations where possible
+  PYTHONHASHSEED = "0"             # Ensure consistent hashing if Python is used
+)
+
+# Set the base R seed for reproducibility
+set.seed(123)
+
+# Load necessary libraries
+library(keras3)
+library(tensorflow)
+library(ggplot2)
+library(reshape2)
+library(caret)
+library(pROC)
+library(ComplexHeatmap)
+
+# Set TensorFlow's random seed
+tensorflow::set_random_seed(1234)
+
+# CLR Transformation data of samples and taxa (855)
+ath2_significant <- ath2_rel_abundance_pseudo
+ath2_top20 <- transform_sample_counts(ath2_significant, clr_transformation)
+
+# Extract OTU table and preprocess data
+otu_counts <- as.data.frame(otu_table(ath2_top20))
+
+# Transpose if taxa are rows, ensuring genera are columns
+if (taxa_are_rows(ath2_top20)) {
+  otu_counts <- t(otu_counts)
+}
+
+# Replace zeros with a small value to avoid issues with log transformations
+otu_counts[otu_counts == 0] <- 1e-6
+
+# Normalize to relative abundances (each sample sums to 1)
+otu_rel_abund <- otu_counts / rowSums(otu_counts)
+
+# Integrate with Metadata and Align
+metadata <- data.frame(sample_data(ath2_top20))
+
+if (!all(rownames(otu_rel_abund) == rownames(metadata))) {
+  metadata <- metadata[rownames(otu_rel_abund), ]
+}
+
+# Combine OTU relative abundance and metadata
+data_combined <- cbind(metadata, otu_rel_abund)
+
+# Split by Person_Type
+athlete_data <- data_combined[data_combined$Person_Type == "Athlete", ]
+non_athlete_data <- data_combined[data_combined$Person_Type == "Non-Athlete", ]
+
+# Balance the dataset using caret upsampling
+set.seed(123)
+upsampled_data <- upSample(x = data_combined[, !(colnames(data_combined) %in% "Person_Type")], 
+                           y = data_combined$Person_Type)
+
+# Separate features and labels
+otu_balanced <- as.matrix(upsampled_data[, !(colnames(upsampled_data) %in% "Class")])
+labels_balanced <- upsampled_data$Class
+
+# Convert data to numeric to avoid issues with TensorFlow
+otu_balanced <- apply(otu_balanced, 2, function(x) {
+  x_numeric <- suppressWarnings(as.numeric(as.character(x)))
+  x_numeric[is.na(x_numeric)] <- 0  # Replace any NA values with 0
+  x_numeric <- pmin(pmax(x_numeric, -1e6), 1e6)  # Clip values to a reasonable range to avoid instability
+  return(x_numeric)
+})
+
+# Handle missing values in the input data
+otu_balanced[is.na(otu_balanced)] <- 0  # Replace NA values with 0
+
+# Scale the data to normalize it (e.g., standardizing it to mean 0, std 1)
+otu_balanced <- scale(otu_balanced)
+
+# Replace NaN and Inf values with zeros or a small constant
+otu_balanced[is.na(otu_balanced)] <- 0
+otu_balanced[is.infinite(otu_balanced)] <- 0
+
+# Split the balanced data into training and testing sets
+set.seed(123)
+
+train_index <- createDataPartition(labels_balanced, p = 0.8, list = FALSE)
+train_data <- otu_balanced[train_index, ]
+test_data <- otu_balanced[-train_index, ]
+train_labels <- labels_balanced[train_index]
+test_labels <- labels_balanced[-train_index]
+
+# Encode labels as numeric
+train_labels_numeric <- ifelse(train_labels == "Athlete", 0, 1)
+test_labels_numeric <- ifelse(test_labels == "Athlete", 0, 1)
+
+# Define the model
+input_shape <- dim(train_data)[2]
+
+tensorflow::set_random_seed(1234)
+
+model <- keras_model_sequential() %>%
+  layer_dense(units = 256, activation = 'relu', input_shape = input_shape) %>%
+  layer_dropout(rate = 0.3) %>%
+  layer_dense(units = 128, activation = 'relu') %>%
+  layer_dropout(rate = 0.3) %>%
+  layer_dense(units = 1, activation = 'sigmoid')
+
+# Compile the model
+model %>% compile(
+  optimizer = 'adam',
+  loss = 'binary_crossentropy',
+  metrics = c('accuracy'),
+  run_eagerly = TRUE  # Enable eager execution for debugging
+)
+
+# Define class weights as a list with numeric values for each class index
+class_weights <- list(
+  "0" = 1,  # Assuming "Athlete" is encoded as 0
+  "1" = nrow(athlete_data) / nrow(non_athlete_data)  # Assigning higher weight for underrepresented non-athletes
+)
+
+# Train the model
+history <- model %>% fit(
+  x = train_data,
+  y = train_labels_numeric,
+  epochs = 100,
+  batch_size = 32,
+  validation_split = 0.2,
+  class_weight = class_weights,
+  callbacks = list(callback_early_stopping(monitor = 'val_loss', patience = 10))
+)
+
+# Predict on the test set
+predicted_probabilities <- model %>% predict(test_data)
+predicted_labels <- ifelse(predicted_probabilities > 0.5, 1, 0)
+
+# Calculate the confusion matrix
+conf_matrix <- confusionMatrix(factor(predicted_labels), factor(test_labels_numeric))
+print(conf_matrix)
+
+# conf_matrix is the confusionMatrix object returned by caret
+# Extract the table (a 2D contingency table) and convert to a data frame
+cm_table <- as.data.frame(conf_matrix$table)
+
+# Make sure we have the correct column names
+colnames(cm_table) <- c("Prediction","Reference","Freq")
+
+# Convert factor codes "0","1" --> "Athlete","Non-Athlete"
+cm_table$Prediction <- factor(
+  cm_table$Prediction,            # old factor with levels "0","1"
+  levels = c("0", "1"),          # numeric codes in ascending order
+  labels = c("Athlete","Non-Athlete")
+)
+
+cm_table$Reference <- factor(
+  cm_table$Reference,
+  levels = c("0", "1"),
+  labels = c("Athlete","Non-Athlete")
+)
+
+#Plot with x=Reference, y=Prediction
+fig4A <- ggplot(cm_table, aes(
+  x = Reference, 
+  y = Prediction, 
+  fill = Freq
+)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = Freq), color = "white", size = 5) +
+  scale_fill_gradient(low = "blue", high = "red") +
+  labs(x = "Actually", 
+       y = "Predicted", 
+       fill = "Frequency") +
+  theme_minimal() +
+  theme(
+    axis.text  = element_text(size = 12),
+    axis.title = element_text(size = 14)
+  ) +
+  ## Key line: Flip the y-axis factor order so "Athlete" is on top
+  scale_y_discrete(limits = rev(levels(cm_table$Prediction)))
+
+fig4A
+
+# Generate the ROC curve using test labels and predicted probabilities
+roc_obj <- roc(test_labels_numeric, as.numeric(predicted_probabilities))
+
+# Plot the ROC Curve
+fig4B <- plot(
+  roc_obj,
+  col = "blue",
+  lwd = 2)
+abline(a = 0, b = 1, lty = 2, col = "red")  # Diagonal reference line
+
+# Calculate and display the AUC
+auc_value <- auc(roc_obj)
+text(
+  x = 0.6,
+  y = 0.2,
+  labels = paste("AUC =", round(auc_value, 3)),
+  col = "black",
+  cex = 1.2
+)
+
+# Print the AUC value to the console
+print(paste(round(auc_value, 3)))
+
+fig4B
+
+######Heat map with Fold change##############
+# Ensure rownames for test_data
+if (is.null(rownames(test_data))) {
+  rownames(test_data) <- paste0("Sample_", seq_len(nrow(test_data)))
+}
+
+# Convert test_data to data frame
+df_test <- as.data.frame(test_data)
+
+# Add predicted labels as a factor
+df_test$Predicted <- factor(
+  predicted_labels,
+  levels = c(0, 1),
+  labels = c("Pred_Athlete", "Pred_NonAthlete")
+)
+
+# Add SampleID column
+df_test$SampleID <- rownames(df_test)
+
+# Extract the taxa table and convert to data frame
+taxa_df <- as.data.frame(tax_table(ath2_top20))  # Adjust if your taxa_table has a different name
+
+# Create a mapping from OTU to Genus
+otu_to_genus <- taxa_df$Genus
+names(otu_to_genus) <- rownames(taxa_df)
+
+# Replace NA Genus with "Unknown"
+otu_to_genus[is.na(otu_to_genus)] <- "Unknown"
+
+# Replace OTU column names in df_test with Genus names
+# First, gather the data into long format
+df_long <- df_test %>%
+  pivot_longer(
+    cols = -c("SampleID", "Predicted"),  # Exclude SampleID and Predicted
+    names_to = "OTU",
+    values_to = "Abundance"
+  ) %>%
+  mutate(Genus = otu_to_genus[OTU])
+
+# Handle OTUs without a Genus assignment by assigning "Unknown"
+df_long <- df_long %>%
+  mutate(Genus = ifelse(is.na(Genus), "Unknown", Genus))
+
+#######
+# Differential Abundance Analysis Using Fold-Change
+######
+# Since the data is CLR-transformed, calculate the difference in mean abundances directly
+df_summary <- df_long %>%
+  group_by(Predicted, Genus) %>%
+  summarize(
+    mean_abundance = mean(Abundance, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Pivot to wide format: Rows = Genus, Columns = Predicted Labels
+df_wide_agg <- df_summary %>%
+  pivot_wider(
+    id_cols = Genus,
+    names_from = Predicted,
+    values_from = mean_abundance,
+    values_fill = 0
+  )
+
+# Check if 'Pred_Athlete' and 'Pred_NonAthlete' columns exist
+print(colnames(df_wide_agg))
+
+# Calculate Fold-Change as the difference in mean abundances
+df_wide_agg <- df_wide_agg %>%
+  mutate(
+    FC = `Pred_NonAthlete` - `Pred_Athlete`  # Difference in CLR-transformed means
+  )
+
+# Remove Genera that are "Unknown" if you prefer to exclude them
+df_wide_agg <- df_wide_agg %>% filter(Genus != "Unknown")
+
+
+# Select top 50 genera based on absolute Fold-Change
+topN <- 50
+top_genera <- df_wide_agg %>%
+  arrange(desc(abs(FC))) %>%
+  slice(1:topN) %>%
+  pull(Genus)
+
+# Subset the aggregated data to top genera and arrange alphabetically
+df_wide_top <- df_wide_agg %>%
+  filter(Genus %in% top_genera) %>%
+  arrange(Genus)  # Sort alphabetically by Genus
+
+# Create a matrix for heatmap
+mat_agg_top <- df_wide_top %>%
+  dplyr::select(`Pred_Athlete`, `Pred_NonAthlete`) %>%
+  as.matrix()
+rownames(mat_agg_top) <- df_wide_top$Genus
+
+# Reverse CLR transformation (approximation by exponentiation)
+mat_reversed <- exp(mat_agg_top)
+
+# Normalize to percent contribution for each column
+mat_percent <- sweep(mat_reversed, 2, colSums(mat_reversed), FUN = "/") * 100
+
+# Verify normalization
+print(colSums(mat_percent))  # Should return ~100 for each column
+
+# Calculate Fold Change (LFC) based on CLR-transformed data
+fc_values <- mat_agg_top[, "Pred_NonAthlete"] - mat_agg_top[, "Pred_Athlete"]
+
+# Add Fold Change to the percent contribution matrix
+mat_combined <- cbind(mat_percent, Fold_Change = fc_values)
+
+# Sort the matrix rows based on absolute Fold Change
+sorted_indices <- order(abs(fc_values), decreasing = TRUE)
+mat_combined_sorted <- mat_combined[sorted_indices, ]
+
+# Define the color palette for Percent Contribution
+color_palette_percent <- colorRampPalette(c("blue", "white", "red"))(100)
+
+# Define the color palette for Fold Change
+color_palette_fc <- colorRampPalette(c("green", "purple"))(100)
+
+# Add Fold Change as an annotation
+row_anno <- rowAnnotation(
+  Fold_Change = anno_barplot(
+    mat_combined_sorted[, "Fold_Change"],
+    gp = gpar(fill = color_palette_fc[as.numeric(cut(mat_combined_sorted[, "Fold_Change"], breaks = 100))]),
+    border = FALSE,
+    bar_width = 0.8
+  )
+)
+
+# Generate the ComplexHeatmap for Percent Contribution with Fold Change annotation
+fig4C <- Heatmap(
+  mat_combined_sorted[, c("Pred_Athlete", "Pred_NonAthlete")],
+  name = "% Contribution",
+  col = color_palette_percent,            # Your defined color palette
+  row_names_gp = gpar(fontface = "italic", fontsize = 8),  # Italic row (genus) labels
+  column_names_gp = gpar(fontsize = 10),     # Column name styling
+  column_names_rot = 45,                     # Rotate x-axis text by 45 degrees
+  heatmap_legend_param = list(title = "% Contribution"),
+  right_annotation = row_anno,               # Your fold change annotation
+  show_row_dend = FALSE,
+  show_column_dend = FALSE,
+  border = TRUE
+)
+
+
+fig4C
+```
+
+### Combine and convert figure 4 into 300 DPI
+
+```{r}
+library(ggpubr)
+library(ggplotify)
+
+# ------------------------------
+# Convert and adjust Figures
+# ------------------------------
+
+# fig4A is your ggplot object for Panel A.
+
+# Figure 4B: ROC curve (adjust margins so that x-axis is visible)
+gFig4B <- as.ggplot(function() {
+  par(mar = c(7, 4, 4, 2) + 0.1)  # Increase bottom margin for x-axis
+  plot(roc_obj, 
+       col = "blue", 
+       lwd = 2, 
+       xlab = "False Positive Rate", 
+       ylab = "True Positive Rate")
+  abline(a = 0, b = 1, lty = 2, col = "red")
+  text(x = 0.6, y = 0.2, 
+       labels = paste("AUC =", round(auc_value, 3)), 
+       col = "black", cex = 1.2)
+})
+
+# Figure 4C: ComplexHeatmap (with rotated x-axis labels and italic row names)
+fig4C <- Heatmap(
+  mat_combined_sorted[, c("Pred_Athlete", "Pred_NonAthlete")],
+  name = "% Contribution",         # Legend title; not the plot title
+  col = color_palette_percent,             # Your predefined color palette
+  row_names_gp = gpar(fontface = "italic", fontsize = 8),  # Italic row labels
+  column_names_gp = gpar(fontsize = 10),      # Column label styling
+  column_names_rot = 45,                     # Rotate x-axis labels by 45 degrees
+  heatmap_legend_param = list(title = "% Contribution"),
+  right_annotation = row_anno,               # Your fold-change annotation
+  show_row_dend = FALSE,
+  show_column_dend = FALSE,
+  border = TRUE
+)
+gFig4C <- as.ggplot(function() {
+  draw(fig4C)
+})
+
+# ------------------------------
+# Arrange the Figures
+# ------------------------------
+
+# ------------------------------
+# Top Row: Arrange Figures A and B Side by Side
+# ------------------------------
+
+top_row <- ggarrange(
+  fig4A,   # Panel A (assumed to be a ggplot object without titles)
+  gFig4B,  # Panel B (ROC curve with adjusted margins for x-axis)
+  labels = c("A", "B"),
+  label.x = c(0.02, 0.02),   # Adjust if needed
+  label.y = c(0.98, 0.98),   # Adjust if needed
+  ncol = 2, nrow = 1,
+  widths = c(1, 1)
+)
+
+# ------------------------------
+# Bottom Row: Panel C (the Heatmap)
+# ------------------------------
+
+# Note: We already converted our ComplexHeatmap to a ggplot object as gFig4C.
+# We want to make panel C slightly smaller so it doesn't cover up the x-axis of the top row.
+# We'll do that by assigning a smaller relative height when arranging the rows.
+
+combined_figure <- ggarrange(
+  top_row,   # Top row with panels A and B
+  gFig4C,    # Panel C (Heatmap)
+  labels = c("", "C"),    # Only panel C gets a label here (top row already has its own labels)
+  label.x = c(NA, 0.02),    # Label for panel C placed at 2% from the left
+  label.y = c(NA, 1.05),    # You can adjust panel C's label position if needed
+  ncol = 1, nrow = 2,
+  heights = c(1, 0.8)       # Top row gets height 1, bottom (C) gets 0.8 to be slightly smaller
+)
+
+# Save the merged figure
+ggsave("Figure4.png", combined_figure, width = 12, height = 12, dpi = 300, bg = "white")
+```
+
+### Training and Validation extraction of the Multilayered percepton - Supplimental Figure 2 A-B
+
+#### Extract the training and validation metrics from the multilayered percepton. Two lines plot generated using ggplot display raining and validation loss over epochs and the other plot shows corresponding training and validation.  Using ggarrange puting both plots side-by-side. Figure was formatted to 300 dpi. 
+
+```{r}
+# Libraries
+library(ggpubr)
+
+
+###Training and validation - Supp fig 3A-B
+
+# Extract training and validation metrics from the history object
+history_df <- data.frame(
+  epoch = 1:length(history$metrics$loss),
+  loss = unlist(history$metrics$loss),
+  val_loss = unlist(history$metrics$val_loss),
+  accuracy = unlist(history$metrics$accuracy),
+  val_accuracy = unlist(history$metrics$val_accuracy)
+)
+
+# Plot Training and Validation Loss
+Supp_fig2A <- ggplot(history_df, aes(x = epoch)) +
+  geom_line(aes(y = loss, color = "Training Loss")) +
+  geom_line(aes(y = val_loss, color = "Validation Loss")) +
+  labs(
+    title = "Training and Validation Loss Over Epochs",
+    x = "Epoch",
+    y = "Loss",
+    color = "Metric"
+  ) +
+  theme_minimal()
+
+# Plot Training and Validation Accuracy
+Supp_fig2B <- ggplot(history_df, aes(x = epoch)) +
+  geom_line(aes(y = accuracy, color = "Training Accuracy")) +
+  geom_line(aes(y = val_accuracy, color = "Validation Accuracy")) +
+  labs(
+    title = "Training and Validation Accuracy Over Epochs",
+    x = "Epoch",
+    y = "Accuracy",
+    color = "Metric"
+  ) +
+  theme_minimal()
+
+# Combine the two plots
+Supp_fig2 <- ggarrange(
+  Supp_fig2A,  # Training & Validation Loss plot
+  Supp_fig2B,  # Training & Validation Accuracy plot
+  labels = c("A", "B"),
+  ncol = 2,    # Use ncol = 1, nrow = 2 for vertical arrangement
+  nrow = 1
+)
+
+# Save figure as 300 DPI
+ggsave("SuppFigure2.png", Supp_fig2, width = 12, height = 6, dpi = 300, bg = "white")
+
+```
