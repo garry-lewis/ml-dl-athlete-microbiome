@@ -1,6 +1,5 @@
 ---
-title: 'The Athlete Microbiome Project: Identifying Underlying Microbial Associations
-  with Athletic Performance'
+title: 'The Athlete Microbiome Project: Integrating deep learning to reveal microbial associations of physical fitness'
 author: "Garry Lewis, Sebastian Reczek, Jarrad Hampton-Marcell"
 date: "2024-10-23"
 output: html_document
