@@ -1686,26 +1686,32 @@ library(dplyr)                # For data manipulation</code></pre>
 <pre><code>## The following objects are masked from &#39;package:base&#39;:
 ## 
 ##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code># Perform ANOVA tests on Weight, Height, and Age between athletes and non-athletes
+<pre class="r"><code># Perform ANOVA tests on Weight, Height, Age, BMI, and VO2max between athletes and non-athletes
 anova_weight &lt;- aov(Weight_kg ~ Person_Type, data = sample_metadata_df)
 anova_height &lt;- aov(Height_cm ~ Person_Type, data = sample_metadata_df)
 anova_age &lt;- aov(Age ~ Person_Type, data = sample_metadata_df)
+anova_bmi &lt;- aov(BMI ~ Person_Type, data = sample_metadata_df)
+anova_vo2 &lt;- aov(VO2max ~ Person_Type, data = sample_metadata_df)
 
-# Extract p-values (ensure you&#39;re pulling from the correct place in the ANOVA summary)
+# Extract p-values
 p_value_weight &lt;- summary(anova_weight)[[1]][[&quot;Pr(&gt;F)&quot;]][1]
 p_value_height &lt;- summary(anova_height)[[1]][[&quot;Pr(&gt;F)&quot;]][1]
 p_value_age &lt;- summary(anova_age)[[1]][[&quot;Pr(&gt;F)&quot;]][1]
+p_value_bmi &lt;- summary(anova_bmi)[[1]][[&quot;Pr(&gt;F)&quot;]][1]
+p_value_vo2 &lt;- summary(anova_vo2)[[1]][[&quot;Pr(&gt;F)&quot;]][1]
 
-# Determine significance (p &lt; 0.05 is significant)
+# Determine significance
 significance_weight &lt;- ifelse(p_value_weight &lt; 0.05, &quot;Significant&quot;, &quot;Not Significant&quot;)
 significance_height &lt;- ifelse(p_value_height &lt; 0.05, &quot;Significant&quot;, &quot;Not Significant&quot;)
 significance_age &lt;- ifelse(p_value_age &lt; 0.05, &quot;Significant&quot;, &quot;Not Significant&quot;)
+significance_bmi &lt;- ifelse(p_value_bmi &lt; 0.05, &quot;Significant&quot;, &quot;Not Significant&quot;)
+significance_vo2 &lt;- ifelse(p_value_vo2 &lt; 0.05, &quot;Significant&quot;, &quot;Not Significant&quot;)
 
 # Create a summary table for ANOVA results
 anova_results_table &lt;- data.frame(
-  Measure = c(&quot;Weight&quot;, &quot;Height&quot;, &quot;Age&quot;),
-  P_Value = c(p_value_weight, p_value_height, p_value_age),
-  Significance = c(significance_weight, significance_height, significance_age)
+  Measure = c(&quot;Weight&quot;, &quot;Height&quot;, &quot;Age&quot;, &quot;BMI&quot;, &quot;VO2max&quot;),
+  P_Value = c(p_value_weight, p_value_height, p_value_age, p_value_bmi, p_value_vo2),
+  Significance = c(significance_weight, significance_height, significance_age, significance_bmi, significance_vo2)
 )
 
 # Display ANOVA results
@@ -1713,7 +1719,9 @@ print(anova_results_table)</code></pre>
 <pre><code>##   Measure      P_Value    Significance
 ## 1  Weight 5.289083e-01 Not Significant
 ## 2  Height 1.665139e-01 Not Significant
-## 3     Age 6.023430e-57     Significant</code></pre>
+## 3     Age 6.023430e-57     Significant
+## 4     BMI 2.390941e-02     Significant
+## 5  VO2max 6.883502e-06     Significant</code></pre>
 </div>
 <div id="table-2" class="section level3">
 <h3>Table 2</h3>
@@ -2573,7 +2581,7 @@ ath.lme.model &lt;- mms(
 ##   message = false convergence (8)40 41 42 43 44 45 46 47 48 49 50 
 ## y51 error: nlminb problem, convergence error code = 1
 ##   message = false convergence (8)52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 
-##  Computational time: 6.789 minutes</code></pre>
+##  Computational time: 6.758 minutes</code></pre>
 <pre class="r"><code># Extract model results and create a data frame of the significant taxa using NBZIMM
 ath.diff.results &lt;- ath.lme.model$fit  # Extract the list of fits for each genus
 
@@ -3339,7 +3347,7 @@ history &lt;- model %&gt;% fit(
 ## Epoch 6/100
 ## 27/27 - 1s - 27ms/step - accuracy: 0.8202 - loss: 0.5802 - val_accuracy: 0.9952 - val_loss: 0.0650
 ## Epoch 7/100
-## 27/27 - 1s - 27ms/step - accuracy: 0.8298 - loss: 0.5799 - val_accuracy: 0.9810 - val_loss: 0.0843
+## 27/27 - 1s - 28ms/step - accuracy: 0.8298 - loss: 0.5799 - val_accuracy: 0.9810 - val_loss: 0.0843
 ## Epoch 8/100
 ## 27/27 - 1s - 27ms/step - accuracy: 0.8607 - loss: 0.4987 - val_accuracy: 1.0000 - val_loss: 0.0173
 ## Epoch 9/100
