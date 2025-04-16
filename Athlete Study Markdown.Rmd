@@ -168,26 +168,32 @@ str(sample_metadata_df)
 # Libraries for ANOVA and data manipulation
 library(dplyr)                # For data manipulation
 
-# Perform ANOVA tests on Weight, Height, and Age between athletes and non-athletes
+# Perform ANOVA tests on Weight, Height, Age, BMI, and VO2max between athletes and non-athletes
 anova_weight <- aov(Weight_kg ~ Person_Type, data = sample_metadata_df)
 anova_height <- aov(Height_cm ~ Person_Type, data = sample_metadata_df)
 anova_age <- aov(Age ~ Person_Type, data = sample_metadata_df)
+anova_bmi <- aov(BMI ~ Person_Type, data = sample_metadata_df)
+anova_vo2 <- aov(VO2max ~ Person_Type, data = sample_metadata_df)
 
-# Extract p-values (ensure you're pulling from the correct place in the ANOVA summary)
+# Extract p-values
 p_value_weight <- summary(anova_weight)[[1]][["Pr(>F)"]][1]
 p_value_height <- summary(anova_height)[[1]][["Pr(>F)"]][1]
 p_value_age <- summary(anova_age)[[1]][["Pr(>F)"]][1]
+p_value_bmi <- summary(anova_bmi)[[1]][["Pr(>F)"]][1]
+p_value_vo2 <- summary(anova_vo2)[[1]][["Pr(>F)"]][1]
 
-# Determine significance (p < 0.05 is significant)
+# Determine significance
 significance_weight <- ifelse(p_value_weight < 0.05, "Significant", "Not Significant")
 significance_height <- ifelse(p_value_height < 0.05, "Significant", "Not Significant")
 significance_age <- ifelse(p_value_age < 0.05, "Significant", "Not Significant")
+significance_bmi <- ifelse(p_value_bmi < 0.05, "Significant", "Not Significant")
+significance_vo2 <- ifelse(p_value_vo2 < 0.05, "Significant", "Not Significant")
 
 # Create a summary table for ANOVA results
 anova_results_table <- data.frame(
-  Measure = c("Weight", "Height", "Age"),
-  P_Value = c(p_value_weight, p_value_height, p_value_age),
-  Significance = c(significance_weight, significance_height, significance_age)
+  Measure = c("Weight", "Height", "Age", "BMI", "VO2max"),
+  P_Value = c(p_value_weight, p_value_height, p_value_age, p_value_bmi, p_value_vo2),
+  Significance = c(significance_weight, significance_height, significance_age, significance_bmi, significance_vo2)
 )
 
 # Display ANOVA results
