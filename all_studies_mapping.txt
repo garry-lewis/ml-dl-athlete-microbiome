@@ -1,0 +1,948 @@
+SampleID	Target	Study	Person_Type	Sport	Continent	Country	Region	Person_ID	Exercise_Type	Height_cm	Weight_kg	Age	BMI	RMR	Fat_Percent	Fat_Free_Percent	VO2max	Gender	Description
+JMC130605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130605
+JMC130606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130606
+JMC130607	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130607
+JMC130608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130608
+JMC130609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130609
+JMC130610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130610
+JMC130613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130613
+JMC130614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130614
+JMC130615	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130615
+JMC130616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130616
+JMC130617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130617
+JMC130620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130620
+JMC130623	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130623
+JMC130624	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130624
+JMC130626	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130626
+JMC130627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130627
+JMC130628	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC13	Aerobic	161.2	46.9	20	18	1216.631	NA	NA	18.97654584	Female	JMC130628
+JMC140605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC14	Aerobic	153	50.2	22	21.4	1188.508	NA	NA	19.32270916	Female	JMC140605
+JMC140606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC14	Aerobic	153	50.2	22	21.4	1188.508	NA	NA	19.32270916	Female	JMC140606
+JMC140607	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC14	Aerobic	153	50.2	22	21.4	1188.508	NA	NA	19.32270916	Female	JMC140607
+JMC140608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC14	Aerobic	153	50.2	22	21.4	1188.508	NA	NA	19.32270916	Female	JMC140608
+JMC140610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC14	Aerobic	153	50.2	22	21.4	1188.508	NA	NA	19.32270916	Female	JMC140610
+JMC140611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC14	Aerobic	153	50.2	22	21.4	1188.508	NA	NA	19.32270916	Female	JMC140611
+JMC140614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC14	Aerobic	153	50.2	22	21.4	1188.508	NA	NA	19.32270916	Female	JMC140614
+JMC140624	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC14	Aerobic	153	50.2	22	21.4	1188.508	NA	NA	19.32270916	Female	JMC140624
+JMC140627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC14	Aerobic	153	50.2	22	21.4	1188.508	NA	NA	19.32270916	Female	JMC140627
+DB130609	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB13	Anaerobic	161.8	60	22	22.9	1341.41	NA	NA	19.83333333	Female	DB130609
+DB190605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB19	Anaerobic	155.2	48.4	22	20.1	1184.276	NA	NA	26.03305785	Female	DB190605
+DB190611	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB19	Anaerobic	155.2	48.4	22	20.1	1184.276	NA	NA	26.03305785	Female	DB190611
+DB140605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB14	Anaerobic	172.7	53.2	20	17.8	1351.443	NA	NA	25.7518797	Female	DB140605
+DB140607	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB14	Anaerobic	172.7	53.2	20	17.8	1351.443	NA	NA	25.7518797	Female	DB140607
+DB150608	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB15	Anaerobic	164.6	46.3	20	17.1	1231.887	NA	NA	31.96544276	Female	DB150608
+DB120606	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB12	Anaerobic	154.8	45.1	21	18.8	1153.729	NA	NA	35.03325942	Female	DB120606
+DB120610	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB12	Anaerobic	154.8	45.1	21	18.8	1153.729	NA	NA	35.03325942	Female	DB120610
+DB160607	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB16	Anaerobic	146.6	43.6	20	20.3	1092.414	NA	NA	36.23853211	Female	DB160607
+DB160610	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB16	Anaerobic	146.6	43.6	20	20.3	1092.414	NA	NA	36.23853211	Female	DB160610
+DB180605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB18	Anaerobic	158.6	52.1	20	20.7	1252.329	NA	NA	31.86180422	Female	DB180605
+DB180610	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB18	Anaerobic	158.6	52.1	20	20.7	1252.329	NA	NA	31.86180422	Female	DB180610
+DB170605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB17	Anaerobic	155.1	53.2	22	22.1	1231.603	NA	NA	32.70676692	Female	DB170605
+DB170611	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB17	Anaerobic	155.1	53.2	22	22.1	1231.603	NA	NA	32.70676692	Female	DB170611
+JMC180605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180605
+JMC180609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180609
+JMC180610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180610
+JMC180611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180611
+JMC180612	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180612
+JMC180613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180613
+JMC180614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180614
+JMC180616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180616
+JMC180620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180620
+JMC180621	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180621
+JMC180622	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180622
+JMC180623	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180623
+JMC180624	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180624
+JMC180626	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180626
+JMC180627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC18	Aerobic	158	51.2	16	20.5	1259.268	NA	NA	37.109375	Female	JMC180627
+JMC100606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100606
+JMC100607	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100607
+JMC100608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100608
+JMC100609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100609
+JMC100610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100610
+JMC100613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100613
+JMC100614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100614
+JMC100615	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100615
+JMC100616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100616
+JMC100617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100617
+JMC100618	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100618
+JMC100619	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100619
+JMC100620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100620
+JMC100626	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100626
+JMC100627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100627
+JMC100628	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC10	Aerobic	154.1	39.7	14	16.7	1295.848	NA	NA	48.61460957	Male	JMC100628
+DB030606	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB03	Anaerobic	168.9	64.6	20	22.6	1607.579	NA	NA	32.6625387	Male	DB030606
+DB030611	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB03	Anaerobic	168.9	64.6	20	22.6	1607.579	NA	NA	32.6625387	Male	DB030611
+JMC170606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170606
+JMC170607	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170607
+JMC170608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170608
+JMC170609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170609
+JMC170610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170610
+JMC170613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170613
+JMC170614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170614
+JMC170615	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170615
+JMC170616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170616
+JMC170617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170617
+JMC170618	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170618
+JMC170619	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170619
+JMC170620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170620
+JMC170621	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170621
+JMC170623	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC17	Aerobic	154.5	48.9	13	20.5	1229.176	NA	NA	43.14928425	Female	JMC170623
+JMC150605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150605
+JMC150606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150606
+JMC150609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150609
+JMC150610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150610
+JMC150611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150611
+JMC150613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150613
+JMC150614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150614
+JMC150615	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150615
+JMC150616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150616
+JMC150617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150617
+JMC150618	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150618
+JMC150620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150620
+JMC150621	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150621
+JMC150622	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150622
+JMC150623	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150623
+JMC150625	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150625
+JMC150626	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150626
+JMC150627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150627
+JMC150628	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC15	Aerobic	162.3	52.1	21	19.8	1270.534	NA	NA	41.07485605	Female	JMC150628
+DB200606	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB20	Anaerobic	170	64.1	19	22.2	1448.379	NA	NA	35.41341654	Female	DB200606
+DB200611	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB20	Anaerobic	170	64.1	19	22.2	1448.379	NA	NA	35.41341654	Female	DB200611
+DB040605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB04	Anaerobic	182.2	61.4	19	18.5	1663.656	NA	NA	38.59934853	Male	DB040605
+DB040608	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB04	Anaerobic	182.2	61.4	19	18.5	1663.656	NA	NA	38.59934853	Male	DB040608
+JMC160605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160605
+JMC160606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160606
+JMC160610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160610
+JMC160611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160611
+JMC160612	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160612
+JMC160614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160614
+JMC160616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160616
+JMC160618	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160618
+JMC160619	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160619
+JMC160620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160620
+JMC160621	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160621
+JMC160624	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160624
+JMC160625	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC16	Aerobic	152.2	44.6	16	19.3	1157.084	NA	NA	54.26008969	Female	JMC160625
+DB050605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB05	Anaerobic	180.8	61.6	19	18.8	1656.904	NA	NA	41.07142857	Male	DB050605
+DB050609	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB05	Anaerobic	180.8	61.6	19	18.8	1656.904	NA	NA	41.07142857	Male	DB050609
+DB080605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB08	Anaerobic	164.5	53.1	23	19.6	1450.434	NA	NA	47.64595104	Male	DB080605
+DB080607	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB08	Anaerobic	164.5	53.1	23	19.6	1450.434	NA	NA	47.64595104	Male	DB080607
+DB080610	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB08	Anaerobic	164.5	53.1	23	19.6	1450.434	NA	NA	47.64595104	Male	DB080610
+DB090605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB09	Anaerobic	171.2	56	22	19.1	1526.2	NA	NA	48.39285714	Male	DB090605
+DB090608	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB09	Anaerobic	171.2	56	22	19.1	1526.2	NA	NA	48.39285714	Male	DB090608
+DB090611	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB09	Anaerobic	171.2	56	22	19.1	1526.2	NA	NA	48.39285714	Male	DB090611
+JMC030606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030606
+JMC030607	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030607
+JMC030608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030608
+JMC030610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030610
+JMC030611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030611
+JMC030612	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030612
+JMC030613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030613
+JMC030614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030614
+JMC030615	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030615
+JMC030616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030616
+JMC030617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030617
+JMC030619	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030619
+JMC030621	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030621
+JMC030623	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030623
+JMC030626	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030626
+JMC030627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030627
+JMC030628	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC03	Aerobic	171.3	64.2	19	21.9	1623.503	NA	NA	42.67912773	Male	JMC030628
+JMC020605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020605
+JMC020606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020606
+JMC020607	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020607
+JMC020608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020608
+JMC020609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020609
+JMC020610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020610
+JMC020612	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020612
+JMC020614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020614
+JMC020615	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020615
+JMC020616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020616
+JMC020617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020617
+JMC020619	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020619
+JMC020620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020620
+JMC020621	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020621
+JMC020623	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020623
+JMC020624	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020624
+JMC020625	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020625
+JMC020626	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020626
+JMC020627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020627
+JMC020628	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC02	Aerobic	170	59.5	20	20.6	1563.505	NA	NA	49.41176471	Male	JMC020628
+DB020606	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB02	Anaerobic	185.6	73.9	21	21.5	1799.941	NA	NA	40.73071719	Male	DB020606
+DB020610	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB02	Anaerobic	185.6	73.9	21	21.5	1799.941	NA	NA	40.73071719	Male	DB020610
+JMC040605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040605
+JMC040606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040606
+JMC040608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040608
+JMC040609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040609
+JMC040610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040610
+JMC040611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040611
+JMC040612	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040612
+JMC040613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040613
+JMC040614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040614
+JMC040615	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040615
+JMC040616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040616
+JMC040617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040617
+JMC040620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040620
+JMC040621	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040621
+JMC040622	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040622
+JMC040624	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040624
+JMC040627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040627
+JMC040628	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC04	Aerobic	167.8	58.9	17	20.9	1558.521	NA	NA	52.46179966	Male	JMC040628
+DB070605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB07	Anaerobic	178.5	63.2	19	19.8	1658.513	NA	NA	50.15822785	Male	DB070605
+DB070607	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB07	Anaerobic	178.5	63.2	19	19.8	1658.513	NA	NA	50.15822785	Male	DB070607
+DB070611	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB07	Anaerobic	178.5	63.2	19	19.8	1658.513	NA	NA	50.15822785	Male	DB070611
+JMC070605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070605
+JMC070606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070606
+JMC070609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070609
+JMC070610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070610
+JMC070611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070611
+JMC070612	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070612
+JMC070616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070616
+JMC070619	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070619
+JMC070620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070620
+JMC070622	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070622
+JMC070624	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070624
+JMC070627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070627
+JMC070628	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC07	Aerobic	167	53.9	20	19.3	1488.811	NA	NA	60.29684601	Male	JMC070628
+DB100606	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB10	Anaerobic	180.8	84.8	21	25.9	1878.832	NA	NA	38.44339623	Male	DB100606
+JMC090605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090605
+JMC090606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090606
+JMC090607	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090607
+JMC090608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090608
+JMC090609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090609
+JMC090610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090610
+JMC090611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090611
+JMC090613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090613
+JMC090615	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090615
+JMC090616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090616
+JMC090617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090617
+JMC090618	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090618
+JMC090619	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090619
+JMC090620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090620
+JMC090621	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090621
+JMC090623	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090623
+JMC090624	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090624
+JMC090625	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090625
+JMC090626	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090626
+JMC090627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC09	Aerobic	162	58.8	15	22.4	1531.112	NA	NA	56.12244898	Male	JMC090627
+DB060609	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB06	Anaerobic	185.5	71.6	20	20.8	1781.259	NA	NA	47.62569832	Male	DB060609
+DB060610	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB06	Anaerobic	185.5	71.6	20	20.8	1781.259	NA	NA	47.62569832	Male	DB060610
+JMC010605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010605
+JMC010608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010608
+JMC010610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010610
+JMC010612	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010612
+JMC010615	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010615
+JMC010617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010617
+JMC010618	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010618
+JMC010620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010620
+JMC010621	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010621
+JMC010624	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010624
+JMC010625	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC01	Aerobic	164.6	65.5	20	24.2	1589.695	NA	NA	52.97709924	Male	JMC010625
+JMC080606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080606
+JMC080607	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080607
+JMC080609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080609
+JMC080610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080610
+JMC080611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080611
+JMC080613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080613
+JMC080614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080614
+JMC080615	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080615
+JMC080616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080616
+JMC080617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080617
+JMC080618	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080618
+JMC080619	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080619
+JMC080621	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080621
+JMC080623	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080623
+JMC080625	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080625
+JMC080626	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080626
+JMC080627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC08	Aerobic	173.2	63.7	16	21.2	1645.143	NA	NA	54.94505495	Male	JMC080627
+DB010605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB01	Anaerobic	175.8	108.8	19	35.2	2097.182	NA	NA	33.36397059	Male	DB010605
+DB010610	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB01	Anaerobic	175.8	108.8	19	35.2	2097.182	NA	NA	33.36397059	Male	DB010610
+JMC050605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050605
+JMC050606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050606
+JMC050608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050608
+JMC050609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050609
+JMC050610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050610
+JMC050611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050611
+JMC050612	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050612
+JMC050613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050613
+JMC050614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050614
+JMC050616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050616
+JMC050617	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050617
+JMC050618	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050618
+JMC050620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050620
+JMC050623	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050623
+JMC050624	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050624
+JMC050626	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050626
+JMC050627	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050627
+JMC050628	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC05	Aerobic	177.8	77.5	19	24.5	1796.995	NA	NA	52	Male	JMC050628
+S22	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.60	Anaerobic	154.4	45.2	32	18.96024054	1098.108	NA	NA	24.4	Female	S22
+751-580-292	Yes	Cook	Athlete	Volleyball	America	USA	North Carolina	Cook.6	Anaerobic	179.07	105.0793651	18	32.76964773	1919.370357	38.8	70	25.2	Female	751-580-292
+S26	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.64	Anaerobic	162.8	75.6	26	28.52416857	1483.824	NA	NA	26.3	Female	S26
+S29	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.67	Anaerobic	147	50	23	23.1385071	1144.09	NA	NA	26.7	Female	S29
+S34	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.72	Anaerobic	163	67.7	24	25.48082352	1415.993	NA	NA	30.3	Female	S34
+491-325-418	Yes	Cook	Athlete	Football	America	USA	North Carolina	Cook.19	Anaerobic	187.96	137.1882086	20	38.83165607	2451.860204	33.7	106	30.9	Male	491-325-418
+S38	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.76	Anaerobic	182	81.6	23	24.63470595	1844.524	NA	NA	31.9	Male	S38
+S28	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.66	Anaerobic	175.9	71.8	27	23.20559804	1688.817	NA	NA	32.8	Male	S28
+S18	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.55	Anaerobic	167.5	60.5	23	21.56382268	1377.11	NA	NA	32.8	Female	S18
+S41	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.80	Anaerobic	180	112	28	34.56790123	2111.12	NA	NA	33.8	Male	S41
+S14	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.51	Anaerobic	182.5	93.8	26	28.16288234	1954.767	NA	NA	34.5	Male	S14
+S23	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.61	Anaerobic	183.8	84.9	21	25.13139963	1898.581	NA	NA	35.9	Male	S23
+S30	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.69	Anaerobic	165.3	63.5	25	23.23956626	1383.49	NA	NA	36.3	Female	S30
+S36	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.74	Anaerobic	169.4	63.9	28	22.26763255	1564.351	NA	NA	36.4	Male	S36
+S10	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.47	Anaerobic	163.2	63.4	26	23.8039456	1364.446	NA	NA	37.35	Female	S10
+S20	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.58	Anaerobic	181.6	98.4	30	29.8375672	1975.416	NA	NA	37.5	Male	S20
+S35	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.73	Anaerobic	166	61	24	22.13673973	1367.81	NA	NA	37.7	Female	S35
+S21	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.59	Anaerobic	156.6	54	26	22.01964152	1229.29	NA	NA	38.8	Female	S21
+S31	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.70	Anaerobic	177.9	84.5	21	26.69960355	1857.71	NA	NA	39.4	Male	S31
+S40	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.79	Anaerobic	172	72.8	25	24.60789616	1684.272	NA	NA	39.7	Male	S40
+S16	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.53	Anaerobic	165	76	22	27.91551882	1521.25	NA	NA	40.2	Female	S16
+311-949-230	Yes	Cook	Athlete	Football	America	USA	North Carolina	Cook.18	Anaerobic	179.07	122.9931973	21	38.35618673	2249.569541	38.9	86.2	40.2	Male	311-949-230
+S15	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.52	Anaerobic	164.9	63.7	33	23.42599903	1343.628	NA	NA	40.4	Female	S15
+S24	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.62	Anaerobic	180.3	76	27	23.37879586	1592.275	NA	NA	41.9	Female	S24
+S4	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.78	Anaerobic	158	51.9	22	20.78993751	1236.741	NA	NA	42.67	Female	S4
+781-580-232	Yes	Cook	Athlete	Volleyball	America	USA	North Carolina	Cook.5	Anaerobic	181.61	84.08163265	19	25.49303952	1720.55801	29.3	65	43.3	Female	781-580-232
+S37	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.75	Anaerobic	193	98	26	26.30943113	2062.35	NA	NA	43.4	Male	S37
+831-949-233	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.17	Aerobic	160.02	56.8707483	20	22.20958331	1308.863776	16.7	54	44.1	Female	831-949-233
+331-949-185	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.14	Aerobic	165.1	60.58956916	20	22.22817042	1377.764796	21.2	50.7	44.4	Female	331-949-185
+599-739-039	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.15	Aerobic	177.8	68.02721088	20	21.51885464	1531.441837	20.4	59.1	44.4	Female	599-739-039
+S9	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.84	Anaerobic	174.2	69.6	28	22.93574958	1485.294	NA	NA	46.23	Female	S9
+S27	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.65	Anaerobic	179.5	69.5	21	21.57028577	1717.86	NA	NA	46.6	Male	S27
+S17	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.54	Anaerobic	188	82.7	21	23.39859665	1902.853	NA	NA	47.6	Male	S17
+831-580-520	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.11	Aerobic	191.77	87.52834467	20	23.80057113	1979.570663	13.2	85.8	48.4	Male	831-580-520
+S12	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.49	Anaerobic	181	71.5	31	21.82473062	1698.015	NA	NA	49.2	Male	S12
+S1	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.46	Anaerobic	167.2	59.3	30	21.21202582	1328.807	NA	NA	49.39	Female	S1
+219-315-514	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.13	Aerobic	156.21	54.92063492	22	22.50701418	1255.729643	19.3	49.3	49.5	Female	219-315-514
+S6	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.81	Anaerobic	184.8	81.7	19	23.92313675	1882.703	NA	NA	49.78	Male	S6
+479-326-140	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.7	Aerobic	163.83	66.2585034	21	24.68622935	1421.539949	17.6	52.6	50.7	Female	479-326-140
+S7	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.82	Anaerobic	186.4	83.2	18	23.94591906	1912.608	NA	NA	51.34	Male	S7
+S33	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.71	Anaerobic	184	83.3	28	24.60420605	1849.407	NA	NA	52.1	Male	S33
+S2	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.57	Anaerobic	166	70.9	22	25.72942372	1642.551	NA	NA	52.18	Male	S2
+439-325-605	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.26	Anaerobic	182.88	76.82539683	20	22.97060248	1817.085714	15.3	75.3	52.2	Male	439-325-605
+S39	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.77	Anaerobic	173.6	67.5	20	22.39774682	1665.925	NA	NA	52.4	Male	S39
+741-580-499	Yes	Cook	Athlete	Volleyball	America	USA	North Carolina	Cook.2	Anaerobic	158.75	70.79365079	18	28.09097682	1449.856071	34.2	49	53	Female	741-580-499
+604-739-147	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.9	Aerobic	185.42	84.21768707	22	24.49571703	1896.969694	13.2	84.1	53.2	Male	604-739-147
+851-580-217	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.8	Aerobic	157.48	48.75283447	20	19.65844031	1211.890816	12.1	43.5	53.5	Female	851-580-217
+S11	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.48	Anaerobic	171.4	64.5	21	21.95523447	1617.285	NA	NA	54.15	Male	S11
+691-580-607	Yes	Cook	Athlete	Volleyball	America	USA	North Carolina	Cook.4	Anaerobic	184.15	78.00453515	18	23.00257242	1680.642806	26.3	63.8	54.5	Female	691-580-607
+459-325-619	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.20	Anaerobic	172.72	65.30612245	18	21.89115317	1648.348163	11.1	65.6	54.5	Male	459-325-619
+741-580-388	Yes	Cook	Athlete	Volleyball	America	USA	North Carolina	Cook.3	Anaerobic	177.8	70.34013605	18	22.2504957	1564.387959	25.3	55	57.4	Female	741-580-388
+856-739-180	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.10	Aerobic	175.26	73.60544218	19	23.96317235	1742.213367	11.6	72.7	57.4	Male	856-739-180
+781-580-496	Yes	Cook	Athlete	Volleyball	America	USA	North Carolina	Cook.1	Anaerobic	175.26	79.50113379	19	25.8825885	1635.111327	26.1	63.9	57.5	Female	781-580-496
+S25	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.63	Anaerobic	185.8	75.6	31	21.89930722	1768.974	NA	NA	57.6	Male	S25
+482-325-871	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.23	Anaerobic	198.374	96.59863946	18	24.54717443	2121.297908	15.6	94.4	57.8	Male	482-325-871
+618-325-173	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.25	Anaerobic	197.104	90.47619048	22	23.28860262	2032.517143	17.3	84.4	59.2	Male	618-325-173
+616-325-833	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.30	Anaerobic	196.342	98.23129252	19	25.48140892	2119.988112	18.1	92.2	60.4	Male	616-325-833
+S3	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.68	Anaerobic	185	76	32	22.20598977	1763.05	NA	NA	60.9	Male	S3
+S8	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.83	Anaerobic	171	68.6	20	23.46020998	1660.664	NA	NA	61.74	Male	S8
+S19	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.56	Anaerobic	177.8	75.9	35	24.00923169	1702.291	NA	NA	62	Male	S19
+S13	Yes	VO2	Gen.Pop	Gen.Pop	America	Canada	British Columbia	Gen.Pop.50	Anaerobic	168.9	57.9	25	20.29641174	1516.046	NA	NA	62.9	Male	S13
+612-326-171	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.22	Anaerobic	189.23	85.3968254	19	23.84853729	1947.321786	13.2	84.1	63.7	Male	612-326-171
+553-739-198	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.12	Aerobic	182.88	64.85260771	21	19.39076832	1692.557551	9.9	65.5	64	Male	553-739-198
+479-326-195	Yes	Cook	Athlete	Track	America	USA	North Carolina	Cook.16	Aerobic	175.26	63.99092971	19	20.83304756	1646.164388	9.4	62.9	64.5	Male	479-326-195
+438-326-095	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.21	Anaerobic	173.228	62.90249433	18	20.96195019	1627.510918	13.9	59.1	65.1	Male	438-326-095
+436-325-187	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.27	Anaerobic	195.58	83.40136054	18	21.80340148	1971.994592	7.9	85.4	65.7	Male	436-325-187
+487-326-207	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.24	Anaerobic	199.39	95.23809524	22	23.95542908	2094.376071	18	89.1	72.7	Male	487-326-207
+615-325-747	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.29	Anaerobic	183.388	76.59863946	20	22.776093	1817.995408	12.3	77.6	79.2	Male	615-325-747
+437-325-082	Yes	Cook	Athlete	Basketball	America	USA	North Carolina	Cook.28	Anaerobic	181.61	67.43764172	20	20.44668272	1715.364541	8.5	68.3	81.7	Male	437-325-082
+BJN6T2	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN6	Anaerobic	188	85	33	24.05	1866.79	NA	NA	NA	Male	BJN6
+BJN6T3	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN6	Anaerobic	188	85	33	24.05	1866.79	NA	NA	NA	Male	BJN6
+BJN6T4	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN6	Anaerobic	188	85	33	24.05	1866.79	NA	NA	NA	Male	BJN6
+BJN6T5	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN6	Anaerobic	188	85	33	24.05	1866.79	NA	NA	NA	Male	BJN6
+BJN6T6	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN6	Anaerobic	188	85	33	24.05	1866.79	NA	NA	NA	Male	BJN6
+BJN2T1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN2	Anaerobic	175	89	25	29.06	1864.86	NA	NA	NA	Male	BJN2
+BJN2T2	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN2	Anaerobic	175	89	25	29.06	1864.86	NA	NA	NA	Male	BJN2
+BJN2T3	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN2	Anaerobic	175	89	25	29.06	1864.86	NA	NA	NA	Male	BJN2
+BJN2T4	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN2	Anaerobic	175	89	25	29.06	1864.86	NA	NA	NA	Male	BJN2
+BJN2T5	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN2	Anaerobic	175	89	25	29.06	1864.86	NA	NA	NA	Male	BJN2
+BJN2T6	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN2	Anaerobic	175	89	25	29.06	1864.86	NA	NA	NA	Male	BJN2
+BJN1T1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN1	Anaerobic	168	53	26	18.78	1456.55	NA	NA	NA	Male	BJN1
+BJN1T2	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN1	Anaerobic	168	53	26	18.78	1456.55	NA	NA	NA	Male	BJN1
+BJN1T3	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN1	Anaerobic	168	53	26	18.78	1456.55	NA	NA	NA	Male	BJN1
+BJN1T4	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN1	Anaerobic	168	53	26	18.78	1456.55	NA	NA	NA	Male	BJN1
+BJN1T5	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN1	Anaerobic	168	53	26	18.78	1456.55	NA	NA	NA	Male	BJN1
+BJN1T6	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN1	Anaerobic	168	53	26	18.78	1456.55	NA	NA	NA	Male	BJN1
+BJN3T1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN3	Anaerobic	167	53	24	19	1294.14	NA	NA	NA	Female	BJN3
+BJN3T2	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN3	Anaerobic	167	53	24	19	1294.14	NA	NA	NA	Female	BJN3
+BJN3T3	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN3	Anaerobic	167	53	24	19	1294.14	NA	NA	NA	Female	BJN3
+BJN3T4	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN3	Anaerobic	167	53	24	19	1294.14	NA	NA	NA	Female	BJN3
+BJN3T5	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN3	Anaerobic	167	53	24	19	1294.14	NA	NA	NA	Female	BJN3
+BJN3T6	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN3	Anaerobic	167	53	24	19	1294.14	NA	NA	NA	Female	BJN3
+BJN10T1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN10	Anaerobic	166	55	28	19.56	1288.19	NA	NA	NA	Female	BJN10
+BJN10T2	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN10	Anaerobic	166	55	28	19.56	1288.19	NA	NA	NA	Female	BJN10
+BJN10T3	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN10	Anaerobic	166	55	28	19.56	1288.19	NA	NA	NA	Female	BJN10
+BJN10T4	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN10	Anaerobic	166	55	28	19.56	1288.19	NA	NA	NA	Female	BJN10
+BJN10T5	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN10	Anaerobic	166	55	28	19.56	1288.19	NA	NA	NA	Female	BJN10
+BJN10T6	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN10	Anaerobic	166	55	28	19.56	1288.19	NA	NA	NA	Female	BJN10
+BJN7T1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN7	Anaerobic	160	56	25	21.88	1275.44	NA	NA	NA	Female	BJN7
+BJN7T2	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN7	Anaerobic	160	56	25	21.88	1275.44	NA	NA	NA	Female	BJN7
+BJN7T3	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN7	Anaerobic	160	56	25	21.88	1275.44	NA	NA	NA	Female	BJN7
+BJN7T4	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN7	Anaerobic	160	56	25	21.88	1275.44	NA	NA	NA	Female	BJN7
+BJN9T1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN9	Anaerobic	165	52	32	19.1	1232.29	NA	NA	NA	Female	BJN9
+BJN9T2	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN9	Anaerobic	165	52	32	19.1	1232.29	NA	NA	NA	Female	BJN9
+BJN9T3	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN9	Anaerobic	165	52	32	19.1	1232.29	NA	NA	NA	Female	BJN9
+BJN9T4	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN9	Anaerobic	165	52	32	19.1	1232.29	NA	NA	NA	Female	BJN9
+BJN9T5	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN9	Anaerobic	165	52	32	19.1	1232.29	NA	NA	NA	Female	BJN9
+BJN9T6	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN9	Anaerobic	165	52	32	19.1	1232.29	NA	NA	NA	Female	BJN9
+BJN4T1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN4	Anaerobic	158	48	25	19.23	1183.02	NA	NA	NA	Female	BJN4
+BJN4T2	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN4	Anaerobic	158	48	25	19.23	1183.02	NA	NA	NA	Female	BJN4
+BJN4T3	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN4	Anaerobic	158	48	25	19.23	1183.02	NA	NA	NA	Female	BJN4
+BJN4T4	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN4	Anaerobic	158	48	25	19.23	1183.02	NA	NA	NA	Female	BJN4
+BJN4T5	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN4	Anaerobic	158	48	25	19.23	1183.02	NA	NA	NA	Female	BJN4
+BJN4T6	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN4	Anaerobic	158	48	25	19.23	1183.02	NA	NA	NA	Female	BJN4
+BJN5T1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN5	Anaerobic	157	48	25	19.47	1176.77	NA	NA	NA	Female	BJN5
+BJN5T2	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN5	Anaerobic	157	48	25	19.47	1176.77	NA	NA	NA	Female	BJN5
+BJN5T3	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN5	Anaerobic	157	48	25	19.47	1176.77	NA	NA	NA	Female	BJN5
+BJN5T4	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN5	Anaerobic	157	48	25	19.47	1176.77	NA	NA	NA	Female	BJN5
+BJN5T5	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN5	Anaerobic	157	48	25	19.47	1176.77	NA	NA	NA	Female	BJN5
+BJN5T6	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN5	Anaerobic	157	48	25	19.47	1176.77	NA	NA	NA	Female	BJN5
+BJN8T1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN8	Anaerobic	156	45	49	18.49	1022.47	NA	NA	NA	Female	BJN8
+BJN8T2	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN8	Anaerobic	156	45	49	18.49	1022.47	NA	NA	NA	Female	BJN8
+BJN8T3	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN8	Anaerobic	156	45	49	18.49	1022.47	NA	NA	NA	Female	BJN8
+BJN8T4	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN8	Anaerobic	156	45	49	18.49	1022.47	NA	NA	NA	Female	BJN8
+BJN8T5	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN8	Anaerobic	156	45	49	18.49	1022.47	NA	NA	NA	Female	BJN8
+BJN8T6	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Beijing	BJN8	Anaerobic	156	45	49	18.49	1022.47	NA	NA	NA	Female	BJN8
+10317.000041609	Yes	UCSD	Gen.Pop	Gen.Pop	America	USA	California	UCSD.10	Anaerobic	175	68	NA	22.20408163	NA	NA	NA	NA	Female	10317.00004
+10317.000042006	Yes	UCSD	Athlete	Rowing	America	USA	California	UCSD.31	Aerobic	NA	61	22	NA	NA	NA	NA	NA	Female	10317.00004
+10317.000065374	Yes	UCSD	Athlete	Tennis	America	USA	California	UCSD.65	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	NA	10317.00007
+10317.000042579	Yes	UCSD	Athlete	Basketball	America	USA	California	UCSD.38	Anaerobic	190	95	24	26.31578947	2023.47	NA	NA	NA	Male	10317.00004
+10317.000042593	Yes	UCSD	Gen.Pop	Gen.Pop	America	USA	California	UCSD.44	Anaerobic	195	106	57	27.87639711	2002.25	NA	NA	NA	Male	10317.00004
+10317.000065370	Yes	UCSD	Athlete	Volleyball	America	USA	California	UCSD.64	Anaerobic	190	90	22	24.93074792	1983.36	NA	NA	NA	Male	10317.00007
+10317.000041633	Yes	UCSD	Athlete	Tennis	America	USA	California	UCSD.18	Anaerobic	190	90	25	24.93074792	1968.6	NA	NA	NA	Male	10317.00004
+10317.000041617	Yes	UCSD	Gen.Pop	Gen.Pop	America	USA	California	UCSD.12	Anaerobic	193	95	42	25.50404038	1953.66	NA	NA	NA	Male	10317.00004
+10317.000041615	Yes	UCSD	Athlete	Swimming	America	USA	California	UCSD.11	Aerobic	187	83	25	23.73530842	1879.92	NA	NA	NA	Male	10317.00004
+10317.000070207	Yes	UCSD	Athlete	Swimming	America	USA	California	UCSD.73	Aerobic	185	79	24	23.082542	1832.38	NA	NA	NA	Male	10317.00007
+10317.000042984	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.50	Anaerobic	182	78	22	23.54788069	1813.48	NA	NA	NA	Male	10317.00004
+10317.000041631	Yes	UCSD	Athlete	Tennis	America	USA	California	UCSD.16	Anaerobic	182	77	23	23.24598478	1798.57	NA	NA	NA	Male	10317.00004
+10317.000043015	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.61	Anaerobic	181	78	24	23.80879705	1797.39	NA	NA	NA	Male	10317.00004
+10317.000041995	Yes	UCSD	Athlete	Water.Polo	America	USA	California	UCSD.29	Anaerobic	180	79	25	24.38271605	1796.21	NA	NA	NA	Male	10317.00004
+10317.000065378	Yes	UCSD	Athlete	Tennis	America	USA	California	UCSD.68	Anaerobic	175	79	21	25.79591837	1784.64	NA	NA	NA	Male	10317.00007
+10317.000041632	Yes	UCSD	Athlete	Tennis	America	USA	California	UCSD.17	Anaerobic	182	77	27	23.24598478	1778.89	NA	NA	NA	Male	10317.00004
+10317.000065396	Yes	UCSD	Athlete	Tennis	America	USA	California	UCSD.72	Anaerobic	180	74	22	22.83950617	1761.02	NA	NA	NA	Male	10317.00007
+10317.000065360	Yes	UCSD	Athlete	Soccer	America	USA	California	UCSD.63	Aerobic	187	68	24	19.44579485	1734.99	NA	NA	NA	Male	10317.00007
+10317.000042999	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.56	Anaerobic	170	77	22	26.64359862	1728.49	NA	NA	NA	Male	10317.00004
+10317.000065377	Yes	UCSD	Athlete	Tennis	America	USA	California	UCSD.67	Anaerobic	183	70	25	20.90238586	1725.05	NA	NA	NA	Male	10317.00007
+10317.000042994	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.53	Anaerobic	177	69	22	22.02432251	1692.32	NA	NA	NA	Male	10317.00004
+10317.000043014	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.60	Anaerobic	180	68	24	20.98765432	1691.24	NA	NA	NA	Male	10317.00004
+10317.000065391	Yes	UCSD	Athlete	Volleyball	America	USA	California	UCSD.70	Anaerobic	190	75	21	20.77562327	1672.43	NA	NA	NA	Female	10317.00007
+10317.000041630	Yes	UCSD	Athlete	Tennis	America	USA	California	UCSD.15	Anaerobic	172	69	23	23.32341806	1656.15	NA	NA	NA	Male	10317.00004
+10317.000042549	Yes	UCSD	Athlete	Fencing	America	USA	California	UCSD.35	Anaerobic	182	63	25	19.0194421	1648.87	NA	NA	NA	Male	10317.00004
+10317.000043003	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.57	Anaerobic	182	77	22	23.24598478	1637.49	NA	NA	NA	Female	10317.00004
+10317.000065394	Yes	UCSD	Athlete	Tennis	America	USA	California	UCSD.71	Anaerobic	175	65	25	21.2244898	1625.1	NA	NA	NA	Male	10317.00007
+10317.000041967	Yes	UCSD	Athlete	Softball	America	USA	California	UCSD.23	Anaerobic	177	79	23	25.21625331	1621.3	NA	NA	NA	Female	10317.00004
+10317.000065375	Yes	UCSD	Athlete	Tennis	America	USA	California	UCSD.66	Anaerobic	175	62	22	20.24489796	1609.89	NA	NA	NA	Male	10317.00007
+10317.000042010	Yes	UCSD	Athlete	Rowing	America	USA	California	UCSD.33	Aerobic	182	74	22	22.34029707	1607.52	NA	NA	NA	Female	10317.00004
+10317.000042978	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.46	Anaerobic	172	63	25	21.29529475	1586.37	NA	NA	NA	Male	10317.00004
+10317.000042980	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.47	Anaerobic	167	65	23	23.30668005	1584.94	NA	NA	NA	Male	10317.00004
+10317.000041976	Yes	UCSD	Athlete	Rowing	America	USA	California	UCSD.27	Aerobic	180	72	22	22.22222222	1575.04	NA	NA	NA	Female	10317.00004
+10317.0000425809	Yes	UCSD	Athlete	Volleyball	America	USA	California	UCSD.39	Anaerobic	182	72	25	21.73650525	1572.78	NA	NA	NA	Female	10317.00004
+10317.000065385	Yes	UCSD	Athlete	Volleyball	America	USA	California	UCSD.69	Anaerobic	185	68	21	19.86851717	1571.25	NA	NA	NA	Female	10317.00007
+10317.000042590	Yes	UCSD	Athlete	Volleyball	America	USA	California	UCSD.43	Anaerobic	177	74	24	23.62028791	1566.43	NA	NA	NA	Female	10317.00004
+10317.000041567	Yes	UCSD	Athlete	Basketball	America	USA	California	UCSD.2	Anaerobic	175	74	23	24.16326531	1558.85	NA	NA	NA	Female	10317.00004
+10317.000041573	Yes	UCSD	Athlete	Basketball	America	USA	California	UCSD.4	Anaerobic	172	74	24	25.01352082	1535.18	NA	NA	NA	Female	10317.00004
+10317.000042587	Yes	UCSD	Athlete	Volleyball	America	USA	California	UCSD.41	Anaerobic	180	68	22	20.98765432	1535.08	NA	NA	NA	Female	10317.00004
+10317.000041986	Yes	UCSD	Athlete	Rowing	America	USA	California	UCSD.28	Aerobic	175	71	23	23.18367347	1528.88	NA	NA	NA	Female	10317.00004
+10317.000041592	Yes	UCSD	Athlete	Swimming	America	USA	California	UCSD.7	Aerobic	175	72	26	23.51020408	1524.11	NA	NA	NA	Female	10317.00004
+10317.000041620	Yes	UCSD	Athlete	Swimming	America	USA	California	UCSD.13	Aerobic	170	73	23	25.25951557	1517.61	NA	NA	NA	Female	10317.00004
+10317.000041580	Yes	UCSD	Athlete	Softball	America	USA	California	UCSD.5	Anaerobic	177	70	26	22.34351559	1516.63	NA	NA	NA	Female	10317.00004
+10317.000041590	Yes	UCSD	Athlete	Swimming	America	USA	California	UCSD.6	Aerobic	175	68	23	22.20408163	1498.91	NA	NA	NA	Female	10317.00004
+10317.000042995	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.54	Anaerobic	170	72	25	24.91349481	1497.78	NA	NA	NA	Female	10317.00004
+10317.000041636	Yes	UCSD	Gen.Pop	Gen.Pop	America	USA	California	UCSD.19	Anaerobic	152	79	51	34.1932133	1493.29	NA	NA	NA	Male	10317.00004
+10317.000042589	Yes	UCSD	Athlete	Volleyball	America	USA	California	UCSD.42	Anaerobic	172	68	22	22.98539751	1485.08	NA	NA	NA	Female	10317.00004
+10317.000041561	Yes	UCSD	Athlete	Softball	America	USA	California	UCSD.1	Anaerobic	167	72	25	25.81663021	1479.03	NA	NA	NA	Female	10317.00004
+10317.000041972	Yes	UCSD	Athlete	Rowing	America	USA	California	UCSD.25	Aerobic	172	68	25	22.98539751	1470.32	NA	NA	NA	Female	10317.00004
+10317.000042009	Yes	UCSD	Athlete	Rowing	America	USA	California	UCSD.32	Aerobic	167	69	24	24.74093729	1453.98	NA	NA	NA	Female	10317.00004
+10317.000042991	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.52	Anaerobic	172	63	24	21.29529475	1425.29	NA	NA	NA	Female	10317.00004
+10317.000042001	Yes	UCSD	Athlete	Rowing	America	USA	California	UCSD.30	Aerobic	170	63	22	21.79930796	1422.63	NA	NA	NA	Female	10317.00004
+10317.000041622	Yes	UCSD	Athlete	Swimming	America	USA	California	UCSD.14	Aerobic	170	63	23	21.79930796	1417.71	NA	NA	NA	Female	10317.00004
+10317.000041965	Yes	UCSD	Athlete	Softball	America	USA	California	UCSD.22	Anaerobic	162	68	23	25.91068435	1417.66	NA	NA	NA	Female	10317.00004
+10317.000042557	Yes	UCSD	Gen.Pop	Gen.Pop	America	USA	California	UCSD.36	Anaerobic	177	65	36	20.74755019	1417.48	NA	NA	NA	Female	10317.00004
+10317.000041969	Yes	UCSD	Athlete	Rowing	America	USA	California	UCSD.24	Aerobic	167	66	27	23.66524436	1409.25	NA	NA	NA	Female	10317.00004
+10317.000042997	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.55	Anaerobic	165	65	23	23.87511478	1406.44	NA	NA	NA	Female	10317.00004
+10317.000043013	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.59	Anaerobic	177	58	26	18.51319863	1396.75	NA	NA	NA	Female	10317.00004
+10317.000042586	Yes	UCSD	Athlete	Volleyball	America	USA	California	UCSD.40	Anaerobic	172	60	24	20.2812331	1395.32	NA	NA	NA	Female	10317.00004
+10317.000043012	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.58	Anaerobic	167	63	26	22.58955144	1384.2	NA	NA	NA	Female	10317.00004
+10317.000041973	Yes	UCSD	Athlete	Rowing	America	USA	California	UCSD.26	Aerobic	165	63	25	23.14049587	1376.62	NA	NA	NA	Female	10317.00004
+10317.000042989	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.51	Anaerobic	170	58	23	20.06920415	1367.76	NA	NA	NA	Female	10317.00004
+10317.000042981	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.48	Anaerobic	170	56	22	19.37716263	1352.7	NA	NA	NA	Female	10317.00004
+10317.000041608	Yes	UCSD	Athlete	Swimming	America	USA	California	UCSD.9	Aerobic	167	58	23	20.79672989	1349.01	NA	NA	NA	Female	10317.00004
+10317.000041962	Yes	UCSD	Athlete	Softball	America	USA	California	UCSD.20	Anaerobic	165	58	22	21.30394858	1341.43	NA	NA	NA	Female	10317.00004
+10317.000042969	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.45	Anaerobic	165	57	22	20.93663912	1331.44	NA	NA	NA	Female	10317.00004
+10317.000041569	Yes	UCSD	Athlete	Softball	America	USA	California	UCSD.3	Anaerobic	165	55	23	20.2020202	1306.54	NA	NA	NA	Female	10317.00004
+10317.000043016	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.62	Anaerobic	162	56	24	21.33821064	1292.86	NA	NA	NA	Female	10317.00004
+10317.000042568	Yes	UCSD	Gen.Pop	Gen.Pop	America	USA	California	UCSD.37	Anaerobic	170	56	42	19.37716263	1254.3	NA	NA	NA	Female	10317.00004
+10317.000041963	Yes	UCSD	Gen.Pop	Gen.Pop	America	USA	California	UCSD.21	Anaerobic	160	68	54	26.5625	1252.64	NA	NA	NA	Female	10317.00004
+10317.000042546	Yes	UCSD	Gen.Pop	Gen.Pop	America	USA	California	UCSD.34	Anaerobic	160	58	40	22.65625	1221.62	NA	NA	NA	Female	10317.00004
+10317.000042982	Yes	UCSD	Athlete	Track	America	USA	California	UCSD.49	Anaerobic	154	49	23	20.66115702	1177.85	NA	NA	NA	Female	10317.00004
+10317.000041606	No	UCSD	Athlete	Swimming	America	USA	California	UCSD.8	Aerobic	65	59	23	139.6449704	721.5	NA	NA	NA	Female	10317.00004
+bc.10L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.10	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.10L
+bc.11L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.11	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.11L
+bc.12L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.12	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.12L
+bc.13L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.13	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.13L
+bc.14L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.14	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.14L
+bc.15L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.15	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.15L
+bc.16L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.16	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.16L
+bc.17L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.17	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.17L
+bc.18L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.18	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.18L
+bc.19L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.19	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.19L
+bc.1L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.1	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.1L
+bc.20L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.20	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.20L
+bc.21L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.21	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.21L
+bc.22L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.22	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.22L
+bc.23L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.23	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.23L
+bc.24L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.24	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.24L
+bc.25L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.25	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.25L
+bc.26L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.26	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.26L
+bc.27L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.27	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.27L
+bc.28L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.28	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.28L
+bc.29L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.29	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.29L
+bc.2L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.2	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.2L
+bc.30L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.30	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.30L
+bc.31L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.31	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.31L
+bc.32L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.32	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.32L
+bc.33L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.33	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.33L
+bc.35L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.35	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.35L
+bc.36L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.36	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.36L
+bc.37L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.37	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.37L
+bc.38L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.38	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.38L
+bc.39L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.39	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.39L
+bc.3L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.3	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.3L
+bc.40L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.40	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.40L
+bc.43L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.43	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.43L
+bc.4L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.4	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.4L
+bc.5L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.5	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.5L
+bc.6L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.6	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.6L
+bc.7L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.7	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.7L
+bc.8L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.8	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.8L
+bc.9L	Yes	Rugby	Athlete	Rugby	Europe	Ireland	Cork City	Rugby.9	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	bc.9L
+Fusion45bc10L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.1	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc10L
+Fusion45bc12L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.2	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc12L
+Fusion45bc13L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.3	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc13L
+Fusion45bc14L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.4	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc14L
+Fusion45bc15L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.5	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc15L
+Fusion45bc16L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.6	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc16L
+Fusion45bc17L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.7	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc17L
+Fusion45bc19L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.8	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc19L
+Fusion45bc1L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.9	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc1L
+Fusion45bc20L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.10	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc20L
+Fusion45bc21L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.11	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc21L
+Fusion45bc22L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.12	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc22L
+Fusion45bc23L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.13	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc23L
+Fusion45bc24L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.14	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc24L
+Fusion45bc25L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.15	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc25L
+Fusion45bc28L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.16	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc28L
+Fusion45bc29L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.17	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc29L
+Fusion45bc2L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.18	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc2L
+Fusion45bc30L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.19	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc30L
+Fusion45bc31L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.20	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc31L
+Fusion45bc32L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.21	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc32L
+Fusion45bc33L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.22	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc33L
+Fusion45bc34L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.23	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc34L
+Fusion45bc35L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.24	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc35L
+Fusion45bc36L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.25	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc36L
+Fusion45bc37L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.26	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc37L
+Fusion45bc38L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.27	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc38L
+Fusion45bc39L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.28	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc39L
+Fusion45bc3L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.29	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc3L
+Fusion45bc40L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.30	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc40L
+Fusion45bc41L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.31	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc41L
+Fusion45bc42L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.32	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc42L
+Fusion45bc43L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.33	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc43L
+Fusion45bc44L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.34	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc44L
+Fusion45bc45L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.35	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc45L
+Fusion45bc46L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.36	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc46L
+Fusion45bc47L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.37	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc47L
+Fusion45bc48L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.38	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc48L
+Fusion45bc49L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.39	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc49L
+Fusion45bc4L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.40	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc4L
+Fusion45bc57L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.41	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc57L
+Fusion45bc5L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.42	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc5L
+Fusion45bc6L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.43	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc6L
+Fusion45bc8L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.44	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc8L
+Fusion45bc9L	Yes	Rugby	Gen.Pop	Gen.Pop	Europe	Ireland	Cork City	Gen.Pop.45	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	Fusion45bc9L
+UIC07	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.7	Aerobic	168.5	74.054	NA	26.08246969	NA	27.1	53.843	NA	Female	UIC07
+UIC55	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.7	Aerobic	168.5	74.508	NA	26.24237248	NA	29	52.743	NA	Female	UIC55
+UIC56	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.7	Aerobic	168.5	74.508	NA	26.24237248	NA	29	52.743	NA	Female	UIC56
+UIC57	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.7	Aerobic	168.5	74.508	NA	26.24237248	NA	29	52.743	NA	Female	UIC57
+UIC29	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.7	Aerobic	166.5	73.831	NA	26.63239816	NA	28.7	52.461	NA	Female	UIC29
+UIC30	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.7	Aerobic	166.5	73.831	NA	26.63239816	NA	28.7	52.461	NA	Female	UIC30
+UIC90	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.12	Aerobic	178	NA	18	NA	NA	NA	NA	NA	Female	UIC90
+UIC91	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.12	Aerobic	178	NA	18	NA	NA	NA	NA	NA	Female	UIC91
+UIC114	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	180.25	NA	22	NA	NA	NA	NA	NA	Male	UIC114
+UIC115	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	180.25	NA	22	NA	NA	NA	NA	NA	Male	UIC115
+UIC08	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	182	89.545	21	27.03326893	1933.73455	11.7	78.62	NA	Male	UIC08
+UIC31	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	181	87.888	21	26.82701993	1910.93112	12.1	77.015	NA	Male	UIC31
+UIC32	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	181	87.888	21	26.82701993	1910.93112	12.1	77.015	NA	Male	UIC32
+UIC33	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	181	87.888	21	26.82701993	1910.93112	12.1	77.015	NA	Male	UIC33
+UIC124	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.13	Aerobic	180.1	86.79	19	26.75729845	1904.1771	10.9	77.36	NA	Male	UIC124
+UIC125	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.13	Aerobic	180.1	86.79	19	26.75729845	1904.1771	10.9	77.36	NA	Male	UIC125
+UIC176	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	179	88.08	22	27.48977872	1895.4292	12.4	77.12	NA	Male	UIC176
+UIC177	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	179	88.08	22	27.48977872	1895.4292	12.4	77.12	NA	Male	UIC177
+UIC58	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	180	86.877	21	26.81388889	1894.58123	12.1	76.37	NA	Male	UIC58
+UIC59	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	180	86.877	21	26.81388889	1894.58123	12.1	76.37	NA	Male	UIC59
+UIC60	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	180	86.877	21	26.81388889	1894.58123	12.1	76.37	NA	Male	UIC60
+UIC09	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.9	Aerobic	180	87.24	22	26.92592593	1893.2876	21.7	64.316	NA	Male	UIC09
+UIC116	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	180.1	86.79	22	26.75729845	1889.4171	10.9	77.36	NA	Male	UIC116
+UIC117	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	180.1	86.79	22	26.75729845	1889.4171	10.9	77.36	NA	Male	UIC117
+UIC110	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	179.5	85.19	22	26.43989417	1869.6831	6.9	79.32	NA	Male	UIC110
+UIC111	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	179.5	85.19	22	26.43989417	1869.6831	6.9	79.32	NA	Male	UIC111
+UIC112	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	180.1	84.71	22	26.11603585	1868.6379	10.1	76.19	NA	Male	UIC112
+UIC113	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.8	Aerobic	180.1	84.71	22	26.11603585	1868.6379	10.1	76.19	NA	Male	UIC113
+UIC168	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.11	Aerobic	178	83.37	20	26.31296553	1851.9663	18.2	68.16	NA	Male	UIC168
+UIC169	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.11	Aerobic	178	83.37	20	26.31296553	1851.9663	18.2	68.16	NA	Male	UIC169
+UIC84	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.11	Aerobic	178.2	81.98	20	25.81621175	1839.3302	20.3	65.31	NA	Male	UIC84
+UIC85	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.11	Aerobic	178.2	81.98	20	25.81621175	1839.3302	20.3	65.31	NA	Male	UIC85
+UIC80	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.11	Aerobic	178	81.46	20	25.71013761	1832.8854	16.1	68.35	NA	Male	UIC80
+UIC81	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.11	Aerobic	178	81.46	20	25.71013761	1832.8854	16.1	68.35	NA	Male	UIC81
+UIC34	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.9	Aerobic	179.5	81.09	22	25.16740249	1828.7241	20	64.87	NA	Male	UIC34
+UIC35	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.9	Aerobic	179.5	81.09	22	25.16740249	1828.7241	20	64.87	NA	Male	UIC35
+UIC36	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.9	Aerobic	179.5	81.09	22	25.16740249	1828.7241	20	64.87	NA	Male	UIC36
+UIC82	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.11	Aerobic	178	80.87	20	25.52392375	1826.9913	17.3	66.9	NA	Male	UIC82
+UIC83	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.11	Aerobic	178	80.87	20	25.52392375	1826.9913	17.3	66.9	NA	Male	UIC83
+UIC61	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.9	Aerobic	178.5	81.267	22	25.5057317	1824.24233	17.1	67.391	NA	Male	UIC61
+UIC62	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.9	Aerobic	178.5	81.267	22	25.5057317	1824.24233	17.1	67.391	NA	Male	UIC62
+UIC63	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.9	Aerobic	178.5	81.267	22	25.5057317	1824.24233	17.1	67.391	NA	Male	UIC63
+UIC78	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.11	Aerobic	177.5	80.16	20	25.44257092	1816.7734	16.8	66.7	NA	Male	UIC78
+UIC79	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.11	Aerobic	177.5	80.16	20	25.44257092	1816.7734	16.8	66.7	NA	Male	UIC79
+UIC92	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.12	Aerobic	179.5	92.69	18	28.76762285	1798.2881	40.4	55.21	NA	Female	UIC92
+UIC93	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.12	Aerobic	179.5	92.69	18	28.76762285	1798.2881	40.4	55.21	NA	Female	UIC93
+UIC170	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.12	Aerobic	178	93.44	18	29.49122586	1796.4056	39.3	56.72	NA	Female	UIC170
+UIC171	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.12	Aerobic	178	93.44	18	29.49122586	1796.4056	39.3	56.72	NA	Female	UIC171
+UIC86	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.12	Aerobic	177.75	93.07	18	29.45713432	1791.1468	38.5	57.22	NA	Female	UIC86
+UIC87	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.12	Aerobic	177.75	93.07	18	29.45713432	1791.1468	38.5	57.22	NA	Female	UIC87
+UIC88	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.12	Aerobic	178.5	92.19	18	28.93392651	1787.0431	38.8	56.41	NA	Female	UIC88
+UIC89	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.12	Aerobic	178.5	92.19	18	28.93392651	1787.0431	38.8	56.41	NA	Female	UIC89
+UIC02	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.2	Aerobic	170.25	78.86	18	27.20711746	1768.3139	20.7	61.878	NA	Male	UIC02
+UIC40	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.2	Aerobic	170	77.497	18	26.81557093	1753.13503	17.9	63.637	NA	Male	UIC40
+UIC41	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.2	Aerobic	170	77.497	18	26.81557093	1753.13503	17.9	63.637	NA	Male	UIC41
+UIC42	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.2	Aerobic	170	77.497	18	26.81557093	1753.13503	17.9	63.637	NA	Male	UIC42
+UIC13	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.2	Aerobic	170.5	76.942	18	26.46760864	1750.71558	17.2	63.369	NA	Male	UIC13
+UIC14	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.2	Aerobic	170.5	76.942	18	26.46760864	1750.71558	17.2	63.369	NA	Male	UIC14
+UIC15	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.2	Aerobic	170.5	76.942	18	26.46760864	1750.71558	17.2	63.369	NA	Male	UIC15
+UIC37	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.1	Aerobic	172	88.897	22	30.04901298	1693.84103	30.1	61.74	NA	Female	UIC37
+UIC38	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.1	Aerobic	172	88.897	22	30.04901298	1693.84103	30.1	61.74	NA	Female	UIC38
+UIC39	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.1	Aerobic	172	88.897	22	30.04901298	1693.84103	30.1	61.74	NA	Female	UIC39
+UIC122	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.13	Aerobic	174	69.05	19	22.8068437	1688.8295	11.3	61.27	NA	Male	UIC122
+UIC123	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.13	Aerobic	174	69.05	19	22.8068437	1688.8295	11.3	61.27	NA	Male	UIC123
+UIC178	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.13	Aerobic	174.5	68.48	19	22.48914213	1686.2602	13	59.61	NA	Male	UIC178
+UIC179	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.13	Aerobic	174.5	68.48	19	22.48914213	1686.2602	13	59.61	NA	Male	UIC179
+UIC01	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.1	Aerobic	172	88.112	22	29.78366685	1685.99888	31.5	60.021	NA	Female	UIC01
+UIC10	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.1	Aerobic	171	88.336	22	30.20963715	1681.98664	31.1	60.637	NA	Female	UIC10
+UIC11	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.1	Aerobic	171	88.336	22	30.20963715	1681.98664	31.1	60.637	NA	Female	UIC11
+UIC12	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.1	Aerobic	171	88.336	22	30.20963715	1681.98664	31.1	60.637	NA	Female	UIC12
+UIC120	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.13	Aerobic	175	67.52	19	22.04734694	1679.7948	12.9	58.83	NA	Male	UIC120
+UIC121	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.13	Aerobic	175	67.52	19	22.04734694	1679.7948	12.9	58.83	NA	Male	UIC121
+UIC118	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.13	Aerobic	175.5	67.05	19	21.76930382	1678.2245	12.6	58.58	NA	Male	UIC118
+UIC119	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.13	Aerobic	175.5	67.05	19	21.76930382	1678.2245	12.6	58.58	NA	Male	UIC119
+UIC25	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.75	64.687	20	22.44902297	1447.76063	18.8	52.534	NA	Female	UIC25
+UIC26	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.75	64.687	20	22.44902297	1447.76063	18.8	52.534	NA	Female	UIC26
+UIC27	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.75	64.687	20	22.44902297	1447.76063	18.8	52.534	NA	Female	UIC27
+UIC06	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.5	64.261	20	22.36701734	1441.94239	18.2	NA	NA	Female	UIC06
+UIC52	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.5	64.131	20	22.32176887	1440.64369	19.6	51.579	NA	Female	UIC52
+UIC53	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.5	64.131	20	22.32176887	1440.64369	19.6	51.579	NA	Female	UIC53
+UIC54	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.5	64.131	20	22.32176887	1440.64369	19.6	51.579	NA	Female	UIC54
+UIC172	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.5	63.99	21	22.27269168	1434.3151	19	51.81	NA	Female	UIC172
+UIC173	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.5	63.99	21	22.27269168	1434.3151	19	51.81	NA	Female	UIC173
+UIC94	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	170.5	62.77	20	21.59252156	1433.2973	15	53.35	NA	Female	UIC94
+UIC95	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	170.5	62.77	20	21.59252156	1433.2973	15	53.35	NA	Female	UIC95
+UIC96	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169	62.92	21	22.03004096	1420.5008	16.4	52.59	NA	Female	UIC96
+UIC97	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169	62.92	21	22.03004096	1420.5008	16.4	52.59	NA	Female	UIC97
+UIC100	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.5	62.44	21	21.73319063	1418.8306	20	49.95	NA	Female	UIC100
+UIC101	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.5	62.44	21	21.73319063	1418.8306	20	49.95	NA	Female	UIC101
+UIC03	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.3	Aerobic	169.5	63.414	23	22.07220612	1418.72086	32.1	43.094	NA	Female	UIC03
+UIC98	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.5	62.39	21	21.71578737	1418.3311	17.6	51.39	NA	Female	UIC98
+UIC99	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.6	Aerobic	169.5	62.39	21	21.71578737	1418.3311	17.6	51.39	NA	Female	UIC99
+UIC16	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.3	Aerobic	168	64.138	23	22.72463152	1416.57862	29.1	45.468	NA	Female	UIC16
+UIC17	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.3	Aerobic	168	64.138	23	22.72463152	1416.57862	29.1	45.468	NA	Female	UIC17
+UIC18	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.3	Aerobic	168	64.138	23	22.72463152	1416.57862	29.1	45.468	NA	Female	UIC18
+UIC22	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.5	Aerobic	165.5	65.192	22	23.80117012	1416.40308	19	52.661	NA	Female	UIC22
+UIC23	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.5	Aerobic	165.5	65.192	22	23.80117012	1416.40308	19	52.661	NA	Female	UIC23
+UIC24	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.5	Aerobic	165.5	65.192	22	23.80117012	1416.40308	19	52.661	NA	Female	UIC24
+UIC43	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.3	Aerobic	169	63.33	23	22.17359336	1414.7567	31.2	43.571	NA	Female	UIC43
+UIC44	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.3	Aerobic	169	63.33	23	22.17359336	1414.7567	31.2	43.571	NA	Female	UIC44
+UIC45	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.3	Aerobic	169	63.33	23	22.17359336	1414.7567	31.2	43.571	NA	Female	UIC45
+UIC49	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.5	Aerobic	166	63.93	22	23.20002903	1406.9207	18.1	52.124	NA	Female	UIC49
+UIC50	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.5	Aerobic	166	63.93	22	23.20002903	1406.9207	18.1	52.124	NA	Female	UIC50
+UIC51	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.5	Aerobic	166	63.93	22	23.20002903	1406.9207	18.1	52.124	NA	Female	UIC51
+UIC05	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.5	Aerobic	165.5	62.319	22	22.75225673	1387.70181	17.3	51.167	NA	Female	UIC05
+UIC166	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.10	Aerobic	157.5	60.61	19	24.43335853	1335.3889	22.4	47.02	NA	Female	UIC166
+UIC167	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.10	Aerobic	157.5	60.61	19	24.43335853	1335.3889	22.4	47.02	NA	Female	UIC167
+UIC72	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.10	Aerobic	157.9	59.71	19	23.94874783	1328.8979	20.6	47.43	NA	Female	UIC72
+UIC73	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.10	Aerobic	157.9	59.71	19	23.94874783	1328.8979	20.6	47.43	NA	Female	UIC73
+UIC70	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.10	Aerobic	158.25	59.38	19	23.71115753	1327.7887	21.1	46.88	NA	Female	UIC70
+UIC71	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.10	Aerobic	158.25	59.38	19	23.71115753	1327.7887	21.1	46.88	NA	Female	UIC71
+UIC74	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.10	Aerobic	158.75	59.04	19	23.42711885	1327.5171	22.4	45.83	NA	Female	UIC74
+UIC75	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.10	Aerobic	158.75	59.04	19	23.42711885	1327.5171	22.4	45.83	NA	Female	UIC75
+UIC76	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.10	Aerobic	158	58.8	19	23.55391764	1320.432	24.5	44.41	NA	Female	UIC76
+UIC77	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.10	Aerobic	158	58.8	19	23.55391764	1320.432	24.5	44.41	NA	Female	UIC77
+UIC04	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	161.5	57.136	21	21.90608556	1315.84364	18.1	46.749	NA	Female	UIC04
+UIC19	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160.5	57.515	21	22.32703487	1313.37985	20.3	45.819	NA	Female	UIC19
+UIC20	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160.5	57.515	21	22.32703487	1313.37985	20.3	45.819	NA	Female	UIC20
+UIC21	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160.5	57.515	21	22.32703487	1313.37985	20.3	45.819	NA	Female	UIC21
+UIC46	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	161	57.104	21	22.03001427	1312.39896	20.8	45.114	NA	Female	UIC46
+UIC47	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	161	57.104	21	22.03001427	1312.39896	20.8	45.114	NA	Female	UIC47
+UIC48	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	161	57.104	21	22.03001427	1312.39896	20.8	45.114	NA	Female	UIC48
+UIC102	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160.3	57.49	22	22.37305364	1306.9601	16.4	48.08	NA	Female	UIC102
+UIC103	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160.3	57.49	22	22.37305364	1306.9601	16.4	48.08	NA	Female	UIC103
+UIC106	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160	57.65	22	22.51953125	1306.6835	19.3	46.54	NA	Female	UIC106
+UIC107	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160	57.65	22	22.51953125	1306.6835	19.3	46.54	NA	Female	UIC107
+UIC104	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160	57.48	22	22.453125	1304.9852	16.9	47.74	NA	Female	UIC104
+UIC105	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160	57.48	22	22.453125	1304.9852	16.9	47.74	NA	Female	UIC105
+UIC108	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	159.75	56.84	22	22.27267273	1297.0291	21.6	44.56	NA	Female	UIC108
+UIC109	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	159.75	56.84	22	22.27267273	1297.0291	21.6	44.56	NA	Female	UIC109
+UIC174	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160	56.03	22	21.88671875	1290.4997	16.5	46.77	NA	Female	UIC174
+UIC175	Yes	Swimmer	Athlete	Swimming	America	USA	Illinois	Swimmer.4	Aerobic	160	56.03	22	21.88671875	1290.4997	16.5	46.77	NA	Female	UIC175
+DZ030422-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ03	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	DZ030422-1
+DZ030425-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ03	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	NA	DZ030425-1
+DZ030426-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ03	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	NA	DZ030426-1
+DZ030427-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ03	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	NA	DZ030427-1
+DZ040504	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ04	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	NA	DZ040504
+DZ040609	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ04	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	NA	DZ040609
+DZ040611	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ04	Anaerobic	NA	NA	NA	NA	NA	NA	NA	NA	NA	DZ040611
+JMC261226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC26	Aerobic	174.6	76.6	21	25.1	1758.164	NA	NA	NA	Male	JMC261226
+JMC261227	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC26	Aerobic	174.6	76.6	21	25.1	1758.164	NA	NA	NA	Male	JMC261227
+JMC261228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC26	Aerobic	174.6	76.6	21	25.1	1758.164	NA	NA	NA	Male	JMC261228
+JMC261229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC26	Aerobic	174.6	76.6	21	25.1	1758.164	NA	NA	NA	Male	JMC261229
+JMC261230	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC26	Aerobic	174.6	76.6	21	25.1	1758.164	NA	NA	NA	Male	JMC261230
+JMC251226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC25	Aerobic	173.8	75.9	20	25.1	1751.091	NA	NA	NA	Male	JMC251226
+JMC251228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC25	Aerobic	173.8	75.9	20	25.1	1751.091	NA	NA	NA	Male	JMC251228
+JMC230102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC23	Aerobic	176.1	73.2	20	23.6	1738.493	NA	NA	NA	Male	JMC230102
+JMC231226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC23	Aerobic	176.1	73.2	20	23.6	1738.493	NA	NA	NA	Male	JMC231226
+JMC231228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC23	Aerobic	176.1	73.2	20	23.6	1738.493	NA	NA	NA	Male	JMC231228
+JMC291226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC29	Aerobic	173.1	74.4	20	24.8	1731.731	NA	NA	NA	Male	JMC291226
+JMC291228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC29	Aerobic	173.1	74.4	20	24.8	1731.731	NA	NA	NA	Male	JMC291228
+JMC200102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC20	Aerobic	176.3	69.2	19	21.5	1704.703	NA	NA	NA	Male	JMC200102
+JMC200103	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC20	Aerobic	176.3	69.2	19	21.5	1704.703	NA	NA	NA	Male	JMC200103
+JMC201218	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC20	Aerobic	176.3	69.2	19	21.5	1704.703	NA	NA	NA	Male	JMC201218
+JMC201219	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC20	Aerobic	176.3	69.2	19	21.5	1704.703	NA	NA	NA	Male	JMC201219
+JMC201220	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC20	Aerobic	176.3	69.2	19	21.5	1704.703	NA	NA	NA	Male	JMC201220
+JMC201222	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC20	Aerobic	176.3	69.2	19	21.5	1704.703	NA	NA	NA	Male	JMC201222
+JMC201223	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC20	Aerobic	176.3	69.2	19	21.5	1704.703	NA	NA	NA	Male	JMC201223
+JMC201224	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC20	Aerobic	176.3	69.2	19	21.5	1704.703	NA	NA	NA	Male	JMC201224
+JMC201225	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC20	Aerobic	176.3	69.2	19	21.5	1704.703	NA	NA	NA	Male	JMC201225
+JMC201229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC20	Aerobic	176.3	69.2	19	21.5	1704.703	NA	NA	NA	Male	JMC201229
+JMC280101	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC28	Aerobic	174.1	68	21	22.4	1669.125	NA	NA	NA	Male	JMC280101
+JMC280102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC28	Aerobic	174.1	68	21	22.4	1669.125	NA	NA	NA	Male	JMC280102
+JMC280103	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC28	Aerobic	174.1	68	21	22.4	1669.125	NA	NA	NA	Male	JMC280103
+JMC281226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC28	Aerobic	174.1	68	21	22.4	1669.125	NA	NA	NA	Male	JMC281226
+JMC281227	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC28	Aerobic	174.1	68	21	22.4	1669.125	NA	NA	NA	Male	JMC281227
+JMC281228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC28	Aerobic	174.1	68	21	22.4	1669.125	NA	NA	NA	Male	JMC281228
+JMC281229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC28	Aerobic	174.1	68	21	22.4	1669.125	NA	NA	NA	Male	JMC281229
+DZ010420-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ01	Anaerobic	184	60.5	23	17.9	1646.235	NA	NA	NA	Male	DZ010420-1
+DZ010422-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ01	Anaerobic	184	60.5	23	17.9	1646.235	NA	NA	NA	Male	DZ010422-1
+DZ010424-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ01	Anaerobic	184	60.5	23	17.9	1646.235	NA	NA	NA	Male	DZ010424-1
+DZ010425-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ01	Anaerobic	184	60.5	23	17.9	1646.235	NA	NA	NA	Male	DZ010425-1
+DZ010426-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ01	Anaerobic	184	60.5	23	17.9	1646.235	NA	NA	NA	Male	DZ010426-1
+DZ010427-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ01	Anaerobic	184	60.5	23	17.9	1646.235	NA	NA	NA	Male	DZ010427-1
+DZ010430	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ01	Anaerobic	184	60.5	23	17.9	1646.235	NA	NA	NA	Male	DZ010430
+JMC190102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC19	Aerobic	172.9	64.4	21	22.3	1625.661	NA	NA	NA	Male	JMC190102
+JMC190103	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC19	Aerobic	172.9	64.4	21	22.3	1625.661	NA	NA	NA	Male	JMC190103
+JMC191218	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC19	Aerobic	172.9	64.4	21	22.3	1625.661	NA	NA	NA	Male	JMC191218
+JMC191219	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC19	Aerobic	172.9	64.4	21	22.3	1625.661	NA	NA	NA	Male	JMC191219
+JMC191220	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC19	Aerobic	172.9	64.4	21	22.3	1625.661	NA	NA	NA	Male	JMC191220
+JMC191222	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC19	Aerobic	172.9	64.4	21	22.3	1625.661	NA	NA	NA	Male	JMC191222
+JMC191223	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC19	Aerobic	172.9	64.4	21	22.3	1625.661	NA	NA	NA	Male	JMC191223
+JMC191224	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC19	Aerobic	172.9	64.4	21	22.3	1625.661	NA	NA	NA	Male	JMC191224
+JMC191225	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC19	Aerobic	172.9	64.4	21	22.3	1625.661	NA	NA	NA	Male	JMC191225
+JMC191229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC19	Aerobic	172.9	64.4	21	22.3	1625.661	NA	NA	NA	Male	JMC191229
+JMC300102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC30	Aerobic	166.8	68.1	21	24.5	1624.499	NA	NA	NA	Male	JMC300102
+JMC300103	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC30	Aerobic	166.8	68.1	21	24.5	1624.499	NA	NA	NA	Male	JMC300103
+JMC301228T1	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC30	Aerobic	166.8	68.1	21	24.5	1624.499	NA	NA	NA	Male	JMC301228T1
+JMC301228T2	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC30	Aerobic	166.8	68.1	21	24.5	1624.499	NA	NA	NA	Male	JMC301228T2
+JMC301229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC30	Aerobic	166.8	68.1	21	24.5	1624.499	NA	NA	NA	Male	JMC301229
+JMC302130	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC30	Aerobic	166.8	68.1	21	24.5	1624.499	NA	NA	NA	Male	JMC302130
+JMC270102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC27	Aerobic	177.4	60.8	20	19.3	1622.742	NA	NA	NA	Male	JMC270102
+JMC270103	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC27	Aerobic	177.4	60.8	20	19.3	1622.742	NA	NA	NA	Male	JMC270103
+JMC271226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC27	Aerobic	177.4	60.8	20	19.3	1622.742	NA	NA	NA	Male	JMC271226
+JMC271227	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC27	Aerobic	177.4	60.8	20	19.3	1622.742	NA	NA	NA	Male	JMC271227
+JMC271228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC27	Aerobic	177.4	60.8	20	19.3	1622.742	NA	NA	NA	Male	JMC271228
+JMC271229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC27	Aerobic	177.4	60.8	20	19.3	1622.742	NA	NA	NA	Male	JMC271229
+JMC271230	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC27	Aerobic	177.4	60.8	20	19.3	1622.742	NA	NA	NA	Male	JMC271230
+JMC240102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC24	Aerobic	172.8	63.9	21	21.4	1620.041	NA	NA	NA	Male	JMC240102
+JMC241226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC24	Aerobic	172.8	63.9	21	21.4	1620.041	NA	NA	NA	Male	JMC241226
+JMC241228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC24	Aerobic	172.8	63.9	21	21.4	1620.041	NA	NA	NA	Male	JMC241228
+JMC210102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC21	Aerobic	170.3	63.2	21	21.8	1597.423	NA	NA	NA	Male	JMC210102
+JMC210103	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC21	Aerobic	170.3	63.2	21	21.8	1597.423	NA	NA	NA	Male	JMC210103
+JMC211226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC21	Aerobic	170.3	63.2	21	21.8	1597.423	NA	NA	NA	Male	JMC211226
+JMC211227	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC21	Aerobic	170.3	63.2	21	21.8	1597.423	NA	NA	NA	Male	JMC211227
+JMC211228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC21	Aerobic	170.3	63.2	21	21.8	1597.423	NA	NA	NA	Male	JMC211228
+JMC211229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC21	Aerobic	170.3	63.2	21	21.8	1597.423	NA	NA	NA	Male	JMC211229
+JMC211230	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC21	Aerobic	170.3	63.2	21	21.8	1597.423	NA	NA	NA	Male	JMC211230
+JMC221226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC22	Aerobic	170.8	61.3	20	21	1586.487	NA	NA	NA	Male	JMC221226
+JMC221228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC22	Aerobic	170.8	61.3	20	21	1586.487	NA	NA	NA	Male	JMC221228
+JMC221229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC22	Aerobic	170.8	61.3	20	21	1586.487	NA	NA	NA	Male	JMC221229
+JMC060605	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC06	Aerobic	165	60.9	20	22.4	1546.241	NA	NA	NA	Male	JMC060605
+JMC060606	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC06	Aerobic	165	60.9	20	22.4	1546.241	NA	NA	NA	Male	JMC060606
+JMC060607	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC06	Aerobic	165	60.9	20	22.4	1546.241	NA	NA	NA	Male	JMC060607
+JMC060608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC06	Aerobic	165	60.9	20	22.4	1546.241	NA	NA	NA	Male	JMC060608
+JMC060609	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC06	Aerobic	165	60.9	20	22.4	1546.241	NA	NA	NA	Male	JMC060609
+JMC060610	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC06	Aerobic	165	60.9	20	22.4	1546.241	NA	NA	NA	Male	JMC060610
+JMC060611	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC06	Aerobic	165	60.9	20	22.4	1546.241	NA	NA	NA	Male	JMC060611
+JMC060612	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC06	Aerobic	165	60.9	20	22.4	1546.241	NA	NA	NA	Male	JMC060612
+JMC060613	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC06	Aerobic	165	60.9	20	22.4	1546.241	NA	NA	NA	Male	JMC060613
+JMC060614	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC06	Aerobic	165	60.9	20	22.4	1546.241	NA	NA	NA	Male	JMC060614
+JMC310101	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC31	Aerobic	163.8	71.6	21	26.7	1474.714	NA	NA	NA	Female	JMC310101
+JMC310102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC31	Aerobic	163.8	71.6	21	26.7	1474.714	NA	NA	NA	Female	JMC310102
+JMC310103	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC31	Aerobic	163.8	71.6	21	26.7	1474.714	NA	NA	NA	Female	JMC310103
+JMC311228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC31	Aerobic	163.8	71.6	21	26.7	1474.714	NA	NA	NA	Female	JMC311228
+JMC311229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC31	Aerobic	163.8	71.6	21	26.7	1474.714	NA	NA	NA	Female	JMC311229
+JMC311230	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC31	Aerobic	163.8	71.6	21	26.7	1474.714	NA	NA	NA	Female	JMC311230
+JMC311231	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC31	Aerobic	163.8	71.6	21	26.7	1474.714	NA	NA	NA	Female	JMC311231
+JMC340103	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC34	Aerobic	166.6	58.4	20	21	1365.266	NA	NA	NA	Female	JMC340103
+JMC341227	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC34	Aerobic	166.6	58.4	20	21	1365.266	NA	NA	NA	Female	JMC341227
+JMC341228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC34	Aerobic	166.6	58.4	20	21	1365.266	NA	NA	NA	Female	JMC341228
+JMC341229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC34	Aerobic	166.6	58.4	20	21	1365.266	NA	NA	NA	Female	JMC341229
+JMC120103	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC120103
+JMC120104	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC120104
+JMC120607	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC120607
+JMC120608	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC120608
+JMC120616	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC120616
+JMC120620	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC120620
+JMC120625	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC120625
+JMC121218	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC121218
+JMC121220	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC121220
+JMC121222	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC121222
+JMC121229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC12	Aerobic	163.3	59.6	23	22.3	1341.869	NA	NA	NA	Female	JMC121229
+JMC370102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC37	Aerobic	166.6	56.5	21	20.4	1341.365	NA	NA	NA	Female	JMC370102
+JMC371227	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC37	Aerobic	166.6	56.5	21	20.4	1341.365	NA	NA	NA	Female	JMC371227
+JMC371228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC37	Aerobic	166.6	56.5	21	20.4	1341.365	NA	NA	NA	Female	JMC371228
+JMC371229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC37	Aerobic	166.6	56.5	21	20.4	1341.365	NA	NA	NA	Female	JMC371229
+JMC371230	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC37	Aerobic	166.6	56.5	21	20.4	1341.365	NA	NA	NA	Female	JMC371230
+JMC351226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC35	Aerobic	161.5	58.1	20	22.3	1330.394	NA	NA	NA	Female	JMC351226
+JMC351227	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC35	Aerobic	161.5	58.1	20	22.3	1330.394	NA	NA	NA	Female	JMC351227
+JMC351228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC35	Aerobic	161.5	58.1	20	22.3	1330.394	NA	NA	NA	Female	JMC351228
+JMC351229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC35	Aerobic	161.5	58.1	20	22.3	1330.394	NA	NA	NA	Female	JMC351229
+DZ020423-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ02	Anaerobic	167.3	55	23	19.7	1320.915	NA	NA	NA	Female	DZ020423-1
+DZ020427-1	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ02	Anaerobic	167.3	55	23	19.7	1320.915	NA	NA	NA	Female	DZ020427-1
+DZ020504	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DZ02	Anaerobic	167.3	55	23	19.7	1320.915	NA	NA	NA	Female	DZ020504
+DB110605	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB11	Anaerobic	164.8	54.3	22	20	1303.217	NA	NA	NA	Female	DB110605
+DB110611	Yes	Sport.Aerobics	Gen.Pop	Gen.Pop	Asia	China	Wuhan	DB11	Anaerobic	164.8	54.3	22	20	1303.217	NA	NA	NA	Female	DB110611
+JMC381227	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC38	Aerobic	162.3	54.7	20	20.8	1301.428	NA	NA	NA	Female	JMC381227
+JMC381228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC38	Aerobic	162.3	54.7	20	20.8	1301.428	NA	NA	NA	Female	JMC381228
+JMC381230	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC38	Aerobic	162.3	54.7	20	20.8	1301.428	NA	NA	NA	Female	JMC381230
+JMC330102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC33	Aerobic	161.4	52.6	20	20.2	1274.824	NA	NA	NA	Female	JMC330102
+JMC331226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC33	Aerobic	161.4	52.6	20	20.2	1274.824	NA	NA	NA	Female	JMC331226
+JMC331228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC33	Aerobic	161.4	52.6	20	20.2	1274.824	NA	NA	NA	Female	JMC331228
+JMC331230	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC33	Aerobic	161.4	52.6	20	20.2	1274.824	NA	NA	NA	Female	JMC331230
+JMC361227	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC36	Aerobic	160.8	51.2	20	19.8	1257.088	NA	NA	NA	Female	JMC361227
+JMC361228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC36	Aerobic	160.8	51.2	20	19.8	1257.088	NA	NA	NA	Female	JMC361228
+JMC361229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC36	Aerobic	160.8	51.2	20	19.8	1257.088	NA	NA	NA	Female	JMC361229
+JMC320102	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC32	Aerobic	155.4	45.2	20	18.7	1163.398	NA	NA	NA	Female	JMC320102
+JMC321226	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC32	Aerobic	155.4	45.2	20	18.7	1163.398	NA	NA	NA	Female	JMC321226
+JMC321228	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC32	Aerobic	155.4	45.2	20	18.7	1163.398	NA	NA	NA	Female	JMC321228
+JMC321229	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC32	Aerobic	155.4	45.2	20	18.7	1163.398	NA	NA	NA	Female	JMC321229
+JMC321230	Yes	Sport.Aerobics	Athlete	Athlete	Asia	China	Wuhan	JMC32	Aerobic	155.4	45.2	20	18.7	1163.398	NA	NA	NA	Female	JMC321230
+SRS3337623	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW84	Aerobic	NA	NA	18	24.9	NA	23.50931063	76.49068937	NA	Female	SRS3337623
+SRS3337624	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW85	Aerobic	NA	NA	18	28.4	NA	29.84661726	70.15338274	NA	Female	SRS3337624
+SRS3337625	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW53	Aerobic	NA	NA	18	19.6	NA	35.88373513	64.11626487	NA	Male	SRS3337625
+SRS3337626	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW98	Aerobic	NA	NA	18	21	NA	34.04384878	65.95615122	NA	Male	SRS3337626
+SRS3337627	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW99	Aerobic	NA	NA	18	25.7	NA	38.86263471	61.13736529	NA	Female	SRS3337627
+SRS3337628	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW32	Aerobic	NA	NA	19	22.6	NA	52.09338241	47.90661759	NA	Female	SRS3337628
+SRS3337629	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW77	Aerobic	NA	NA	19	31.7	NA	31.16846132	68.83153868	NA	Male	SRS3337629
+SRS3337630	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW78	Aerobic	NA	NA	19	33.5	NA	45.28213519	54.71786481	NA	Male	SRS3337630
+SRS3337631	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW54	Aerobic	NA	NA	18	20.3	NA	48.21313005	51.78686995	NA	Male	SRS3337631
+SRS3337632	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW80	Aerobic	NA	NA	18	21.2	NA	39.03112569	60.96887431	NA	Female	SRS3337632
+SRS3337633	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW81	Aerobic	NA	NA	19	25.1	NA	44.38080295	55.61919705	NA	Male	SRS3337633
+SRS3337634	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW71	Aerobic	NA	NA	18	21.7	NA	39.90277181	60.09722819	NA	Female	SRS3337634
+SRS3337635	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW83	Aerobic	NA	NA	18	20.5	NA	27.76986157	72.23013843	NA	Female	SRS3337635
+SRS3337636	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW24	Aerobic	NA	NA	18	29.1	NA	30.28024929	69.71975071	NA	Female	SRS3337636
+SRS3337637	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW25	Aerobic	NA	NA	19	24.7	NA	NA	NA	NA	Female	SRS3337637
+SRS3337638	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW26	Aerobic	NA	NA	18	36.8	NA	20.82450963	79.17549037	NA	Male	SRS3337638
+SRS3337639	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW28	Aerobic	NA	NA	18	23.1	NA	40.17186729	59.82813271	NA	Female	SRS3337639
+SRS3337640	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW20	Aerobic	NA	NA	18	21.7	NA	24.23616102	75.76383898	NA	Male	SRS3337640
+SRS3337641	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW21	Aerobic	NA	NA	18	19	NA	37.15258593	62.84741407	NA	Female	SRS3337641
+SRS3337642	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW22	Aerobic	NA	NA	18	23.3	NA	NA	NA	NA	Male	SRS3337642
+SRS3337643	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW23	Aerobic	NA	NA	18	17.6	NA	NA	NA	NA	Female	SRS3337643
+SRS3337644	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW57	Aerobic	NA	NA	19	22.3	NA	29.65789584	70.34210416	NA	Female	SRS3337644
+SRS3337645	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW58	Aerobic	NA	NA	18	24.9	NA	40.89833427	59.10166573	NA	Female	SRS3337645
+SRS3337646	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW29	Aerobic	NA	NA	19	20.4	NA	39.74834776	60.25165224	NA	Female	SRS3337646
+SRS3337647	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW30	Aerobic	NA	NA	19	21.5	NA	44.28325613	55.71674387	NA	Female	SRS3337647
+SRS3337648	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW65	Aerobic	NA	NA	19	18.3	NA	39.65223331	60.34776669	NA	Female	SRS3337648
+SRS3337649	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW31	Aerobic	NA	NA	18	16.9	NA	37.07859486	62.92140514	NA	Female	SRS3337649
+SRS3337650	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW100	Aerobic	NA	NA	19	25.3	NA	36.06308637	63.93691363	NA	Female	SRS3337650
+SRS3337651	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW10	Aerobic	NA	NA	18	24.3	NA	42.00565316	57.99434684	NA	Female	SRS3337651
+SRS3337652	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW07	Aerobic	NA	NA	17	23.1	NA	57.24215375	42.75784625	NA	Female	SRS3337652
+SRS3337653	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW41	Aerobic	NA	NA	19	21.1	NA	29.08837974	70.91162026	NA	Female	SRS3337653
+SRS3337654	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW09	Aerobic	NA	NA	18	23.5	NA	NA	NA	NA	Female	SRS3337654
+SRS3337655	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW08	Aerobic	NA	NA	18	32.2	NA	27.67730175	72.32269825	NA	Male	SRS3337655
+SRS3337656	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW03	Aerobic	NA	NA	19	21.2	NA	NA	NA	NA	Male	SRS3337656
+SRS3337657	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW02	Aerobic	NA	NA	18	23.7	NA	NA	NA	NA	Male	SRS3337657
+SRS3337658	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW05	Aerobic	NA	NA	18	34.9	NA	NA	NA	NA	Male	SRS3337658
+SRS3337659	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW04	Aerobic	NA	NA	20	30.2	NA	NA	NA	NA	Male	SRS3337659
+SRS3337660	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW94	Aerobic	NA	NA	19	24.9	NA	28.33584424	71.66415576	NA	Female	SRS3337660
+SRS3337661	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW37	Aerobic	NA	NA	18	25.7	NA	37.62063788	62.37936212	NA	Female	SRS3337661
+SRS3337662	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW35	Aerobic	NA	NA	19	19.7	NA	29.83982399	70.16017601	NA	Female	SRS3337662
+SRS3337663	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW76	Aerobic	NA	NA	18	22.1	NA	35.67773204	64.32226796	NA	Female	SRS3337663
+SRS3337664	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW64	Aerobic	NA	NA	18	18.6	NA	45.29739093	54.70260907	NA	Male	SRS3337664
+SRS3337665	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW79	Aerobic	NA	NA	19	50.4	NA	40.56850316	59.43149684	NA	Female	SRS3337665
+SRS3337666	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW97	Aerobic	NA	NA	19	19.2	NA	32.72943143	67.27056857	NA	Male	SRS3337666
+SRS3337667	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW96	Aerobic	NA	NA	19	20.1	NA	30.92980965	69.07019035	NA	Male	SRS3337667
+SRS3337668	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW95	Aerobic	NA	NA	18	25.9	NA	32.2766743	67.7233257	NA	Male	SRS3337668
+SRS3337669	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW90	Aerobic	NA	NA	18	19.5	NA	29.92356534	70.07643466	NA	Female	SRS3337669
+SRS3337670	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW92	Aerobic	NA	NA	19	20.7	NA	36.32368942	63.67631058	NA	Female	SRS3337670
+SRS3337671	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW91	Aerobic	NA	NA	18	25.1	NA	29.13957706	70.86042294	NA	Female	SRS3337671
+SRS3337672	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW34	Aerobic	NA	NA	18	19.9	NA	42.11944119	57.88055881	NA	Female	SRS3337672
+SRS3337673	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW87	Aerobic	NA	NA	19	25.1	NA	32.62318879	67.37681121	NA	Male	SRS3337673
+SRS3337674	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW89	Aerobic	NA	NA	18	22.3	NA	34.17059723	65.82940277	NA	Male	SRS3337674
+SRS3337675	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW86	Aerobic	NA	NA	19	20.7	NA	53.09053098	46.90946902	NA	Male	SRS3337675
+SRS3337676	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW60	Aerobic	NA	NA	18	21.4	NA	35.4901474	64.5098526	NA	Male	SRS3337676
+SRS3337677	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW59	Aerobic	NA	NA	18	30.5	NA	29.75332466	70.24667534	NA	Male	SRS3337677
+SRS3337678	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW43	Aerobic	NA	NA	18	18.1	NA	43.20960687	56.79039313	NA	Male	SRS3337678
+SRS3337679	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW42	Aerobic	NA	NA	18	28.3	NA	37.05518246	62.94481754	NA	Male	SRS3337679
+SRS3337680	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW19	Aerobic	NA	NA	18	22	NA	44.94846225	55.05153775	NA	Male	SRS3337680
+SRS3337681	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW18	Aerobic	NA	NA	19	28.8	NA	32.63668366	67.36331634	NA	Male	SRS3337681
+SRS3337682	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW70	Aerobic	NA	NA	18	23.7	NA	36.61931628	63.38068372	NA	Female	SRS3337682
+SRS3337683	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW68	Aerobic	NA	NA	20	23.8	NA	21.80154281	78.19845719	NA	Female	SRS3337683
+SRS3337684	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW15	Aerobic	NA	NA	18	20.7	NA	NA	NA	NA	Female	SRS3337684
+SRS3337685	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW14	Aerobic	NA	NA	18	32.6	NA	44.35982397	55.64017603	NA	Female	SRS3337685
+SRS3337686	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW17	Aerobic	NA	NA	19	31.3	NA	NA	NA	NA	Female	SRS3337686
+SRS3337687	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW16	Aerobic	NA	NA	18	21.5	NA	31.21323649	68.78676351	NA	Female	SRS3337687
+SRS3337688	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW11	Aerobic	NA	NA	19	20.6	NA	NA	NA	NA	Male	SRS3337688
+SRS3337689	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW101	Aerobic	NA	NA	19	25.3	NA	50.12124595	49.87875405	NA	Male	SRS3337689
+SRS3337690	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW13	Aerobic	NA	NA	18	26.9	NA	NA	NA	NA	Female	SRS3337690
+SRS3337691	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW12	Aerobic	NA	NA	18	21.2	NA	33.80780296	66.19219704	NA	Female	SRS3337691
+SRS3337692	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW50	Aerobic	NA	NA	18	21.7	NA	35.08183489	64.91816511	NA	Male	SRS3337692
+SRS3337693	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW40	Aerobic	NA	NA	18	19.1	NA	25.53736283	74.46263717	NA	Female	SRS3337693
+SRS3337694	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW51	Aerobic	NA	NA	19	29.8	NA	39.4709689	60.5290311	NA	Female	SRS3337694
+SRS3337695	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW33	Aerobic	NA	NA	18	39.6	NA	NA	NA	NA	Male	SRS3337695
+SRS3337696	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW47	Aerobic	NA	NA	18	22.4	NA	35.23732061	64.76267939	NA	Female	SRS3337696
+SRS3337697	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW63	Aerobic	NA	NA	18	27.5	NA	13.60817864	86.39182136	NA	Female	SRS3337697
+SRS3337698	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW72	Aerobic	NA	NA	19	18.3	NA	40.46861427	59.53138573	NA	Female	SRS3337698
+SRS3337699	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW49	Aerobic	NA	NA	19	25	NA	30.25552328	69.74447672	NA	Male	SRS3337699
+SRS3337700	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW06	Aerobic	NA	NA	20	25.6	NA	NA	NA	NA	Male	SRS3337700
+SRS3337701	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW67	Aerobic	NA	NA	19	20.9	NA	41.02890126	58.97109874	NA	Female	SRS3337701
+SRS3337702	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW55	Aerobic	NA	NA	18	21	NA	35.37931278	64.62068722	NA	Female	SRS3337702
+SRS3337703	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW82	Aerobic	NA	NA	18	26.7	NA	27.80007989	72.19992011	NA	Male	SRS3337703
+SRS3337704	Yes	Whisner	Gen.Pop	Gen.Pop	America	USA	Arizona	DW56	Aerobic	NA	NA	19	31.6	NA	43.20399555	56.79600445	NA	Male	SRS3337704
+SRR2992849	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03634-1-ST-T0-B0-ABD3D-Jamis-D712-D506	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992849
+SRR2992850	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03626-1-ST-T0-B0-ABD3D-Merlin-D701-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992850
+SRR2992851	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03629-1-ST-T0-B0-ABD3D-Intense-D702-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992851
+SRR2992852	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03630-1-ST-T0-B0-ABD3D-Scott-D703-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992852
+SRR2992853	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03631-1-ST-T0-B0-ABD3D-IronHorse-D704-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992853
+SRR2992854	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03635-1-ST-T0-B0-ABD3D-Knolly-D705-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992854
+SRR2992855	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03627-1-ST-T0-B0-ABD3D-Devinci-D706-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992855
+SRR2992856	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03638-1-ST-T0-B0-ABD3D-Trek-D707-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992856
+SRR2992857	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03633-1-ST-T0-B0-ABD3D-SantaCruz-D708-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992857
+SRR2992858	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03636-1-ST-T0-B0-ABD3D-Niner-D709-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992858
+SRR2992859	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03624-1-ST-T0-B0-ABD3D-Huffy-D710-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992859
+SRR2992860	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03628-1-ST-T0-B0-ABD3D-Mongoose-D712-D507	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992860
+SRR2992861	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03632-1-ST-T0-B0-ABD3D-Commencal-D701-D508	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992861
+SRR2992862	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03637-1-ST-T0-B0-ABD3D-Giant-D702-D508	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992862
+SRR2992863	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03639-1-ST-T0-B0-ABD3D-Pivot-D703-D508	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992863
+SRR2992864	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03640-1-ST-T0-B0-ABD3D-Pinarello-D704-D508	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992864
+SRR2992865	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03641-1-ST-T0-B0-ABD3D-Schwinn-D705-D508	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992865
+SRR2992866	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03642-1-ST-T0-B0-ABD3D-Yeti-D706-D508	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992866
+SRR2992867	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03644-1-ST-T0-B0-ABD3D-Breezer-D708-D508	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992867
+SRR2992868	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03645-1-ST-T0-B0-ABD3D-Juliana-D709-D508	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992868
+SRR2992869	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03646-1-ST-T0-B0-ABD3D-Deity-D710-D508	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992869
+SRR2992870	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1-J03625-1-ST-T0-B0-Ibis-AB89R	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992870
+SRR2992871	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17342_1_ST_T0_B0_0000_Cove_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992871
+SRR2992872	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17343_1_ST_T0_B0_0000_Norco_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992872
+SRR2992873	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17344_1_ST_T0_B0_0000_SRAM_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992873
+SRR2992874	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17346_1_ST_T0_B0_0000_Saint_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992874
+SRR2992875	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17348_1_ST_T0_B0_0000_Enve_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992875
+SRR2992876	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17349_1_ST_T0_B0_0000_Thomson_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992876
+SRR2992877	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17352_1_ST_T0_B0_0000_Zipp_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992877
+SRR2992878	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17353_1_ST_T0_B0_0000_Easton_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992878
+SRR2992879	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17354_1_ST_T0_B0_0000_Speedplay_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992879
+SRR2992880	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17355_1_ST_T0_B0_0000_Crank_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Female	SRR2992880
+SRR2992881	Yes	Petersen	Athlete	Cyclist	America	USA	Connecticut	AMP1_J17356_1_ST_T0_B0_0000_Renthal_ST_XP_AGCYW	Aerobic	NA	NA	NA	NA	NA	NA	NA	NA	Male	SRR2992881
